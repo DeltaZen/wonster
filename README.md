@@ -137,8 +137,8 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Ukrainian](https://goroh.pp.ua/games/wordle): Ukrainian
 - [Urdle](https://urdle.chaoticity.com/): Urdu
 - [Vārdulis](https://wordle.lielakeda.lv/): Latvian
+- [Wokle](https://wokle.njamed.com/): Bininj Kunwok
 - [Word-leh!](https://word-leh.com): Singlish
-- [Wordlar](http://wordlar.uz/): Uzbek
 - [Wordle (BOS)](https://elahmo.github.io/wordle/): Bosnian
 - [Wordle (Spanish)](https://wordle-es.xavier.cc): Spanish/Espanol
 - [Wordle-RO](https://wordle-ro.sirb.net/): Romanian
