@@ -195,6 +195,9 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [WROUD](https://www.wroud.net/): W R O U D is a simple word game that challenges people to find a six-letter word in 3 guesses from a cloud of letters.
 - [香港麻雀 糊 dle](https://hkwudle.vercel.app/): Mahjong hands under Hong Kong rules
 
+### Fun themes in other languages
+- [German Harry Potter Wordle](https://hpwordle.de)
+
 ### Math, Acronyms, Science, Tech, and more
 
 - [AI-powered](https://github.com/asirota/wordle-ai): Includes an AI component
