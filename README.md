@@ -173,6 +173,7 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Filmle](https://filmle.now.sh/): Movie titles
 - [Fletcherdle](https://www.fletcherdle.com/): American singer-songwriter FLETCHER
 - [Lyricle](https://www.lyricle.app/): Lyrics
+- [Midnightle](https://midnightle.flra.eu): Taylor Swift's Midnights album
 - [Movie Wordle](https://movie-wordle.vercel.app): Bollywood
 - [Murdle](https://murdle.vercel.app/): Spooky hangman mashup
 - [Pawnle](https://pawnle.vercel.app/): Parks and Recreation
