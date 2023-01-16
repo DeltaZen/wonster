@@ -204,7 +204,7 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [AI-powered](https://github.com/asirota/wordle-ai): Includes an AI component
 - [Biordle](https://biordle.grenteam.com): Biology
 - [Colordle](https://github.com/necropolina/colordle): Guess the hexadecimal color code of the background
-- [Genel](https://andrewholding.github.io/gene-wordle/): Gene symbols
+- [Genele](https://andrewholding.github.io/gene-wordle/): Gene symbols
 - [Jazle](https://jazle.quest/): Javascript
 - [Mathler](https://www.mathler.com/): Find the solution that equals X
 - [Morsel](https://plingbang.github.io/morsel/): Morse
