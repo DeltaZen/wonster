@@ -44,8 +44,8 @@ The default configuration is for solutions and guesses of length five, but it is
 
 To configure for a different constant length:
 
-- Update the `WORDS` array in [src/constants/wordlist.ts](src/constants/wordlist.ts) to only include words of the new length.
-- Update the `VALID_GUESSES` array in [src/constants/validGuesses.ts](src/constants/validGuesses.ts) to only include words of the new length.
+- Update the `WORDS` array in [src/constants/wordlist.ts](src/constants/wordlist.ts) to include only words of the new length.
+- Update the `VALID_GUESSES` array in [src/constants/validGuesses.ts](src/constants/validGuesses.ts) to include only words of the new length.
 
 To configure for variable lengths:
 
@@ -196,6 +196,7 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [香港麻雀 糊 dle](https://hkwudle.vercel.app/): Mahjong hands under Hong Kong rules
 
 ### Fun themes in other languages
+
 - [German Harry Potter Wordle](https://hpwordle.de)
 - [Spotle](https://spotlegame.co.uk/portuguese): Spotle, but in Portuguese
 
@@ -218,7 +219,7 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Rundle](https://furstenheim.github.io/react-wordle/): Like wordle, but only last three guesses are considered.
 - [Stockle](https://stockle.win/): Guess the stock or ETF
 - [Syscordle](https://nezza.github.io/syscordle/): SYSCALL
-- [TwoKinds](https://twokinds.me): There's only two kinds of people in this World.
+- [TwoKinds](https://twokinds.me): There are only two kinds of people in this World.
 - [UNLOCOdle](https://unlocodle.collabital.com/): UNLOCODEs
 - [Visionle](https://orisenbazuru.github.io/visionle/): Guess the label of randomly chosen image from ImageNet/ImageNet-Sketch dataset (Machine learning)
 - [Zip-zap-bam!](https://aneets.github.io/zip-zap-bam/): Word ladder game.
