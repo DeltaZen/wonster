@@ -189,6 +189,7 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Tacticle](https://tacticle.co/): Chess puzzles
 - [Taylordle](https://www.taylordle.com/): Taylor Swift
 - [Trekle](https://treklegame.com): Star Trek
+- [Turdle](https://turdle.xyz): Make the turtle jump!
 - [Weedel](https://meetmeinouter.space/wordle/): Video game characters
 - [Wordle.cl](https://www.wordle.cl): Chilean modisms, cities, places
 - [Wrdl](https://wrdl-abae.vercel.app/): Words that are 5 letters long after getting rid of their vowels
