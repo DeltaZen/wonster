@@ -109,6 +109,7 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Arwordle](https://arwordle.netlify.app/): Arabic
 - [Boludle](https://www.boludle.com/): Argentinian
 - [Gerdle](https://gerdle.vext.co.uk/): Cornish (Kernowek)
+- [Ijambo](https://www.ijambo.app/): Kirundi (spoken in Burundi)
 - [Jwordle](https://jwordle.vercel.app/): Japanese
 - [Katadel](https://katadel.vercel.app/): Jawi (Malay Arabic script)
 - [Keclap](https://keclap.xyz/): Sundanese
