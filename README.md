@@ -178,7 +178,7 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Murdle](https://murdle.vercel.app/): Spooky hangman mashup
 - [Pawnle](https://pawnle.vercel.app/): Parks and Recreation
 - [Poker Handle](https://kikychow.github.io/poker-wordle/): Poker
-- [Poker Handle 2](https://poker-handle2.com/): Poker
+- [Poker Handle 2](https://poker-handle2.vercel.app/): Poker
 - [Polygonle](https://www.polygonle.com/): Wordle with a shape-based clue for each character
 - [Quettale](https://quettale.vercel.app/): Quenya, Elven language in LOTR
 - [Radiole](https://radiole.vercel.app/): Radio-themed (for World Radio Day)
