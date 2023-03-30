@@ -166,6 +166,7 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Discwordle](https://discwordle.marcschulder.de/): Terry Pratchett's Discworld
 - [Dundle](https://dundle.dunmiffcord.com/): The Office
 - [FFXIVrdle](https://ffxivrdle.com/): Final Fantasy XIV
+- [Harderdl](https://helq.github.io/harderdl): For those who find Wordle too easy (might need pen and paper to solve)
 - [Harry Potter](https://www.harrypotterwordle.com/): Harry Potter
 - [JoJodle](https://jojo-news.com/fun/jojodle/): JoJo’s Bizarre Adventure
 - [Mahjong Handle](https://mahjong-handle.update.sh/): Mahjong Hands
