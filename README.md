@@ -163,6 +163,7 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Buildly](https://buildly.procurepro.co/): Construction themed
 - [Crosswordle](https://crosswordle.mekoppe.com/): Crossword mashup
 - [DALL-e-dle](https://dall-e-dle.vercel.app/): Provides a DALL-E generated image of the word as a clue
+- [Discwordle](https://discwordle.marcschulder.de/): Terry Pratchett's Discworld
 - [Dundle](https://dundle.dunmiffcord.com/): The Office
 - [FFXIVrdle](https://ffxivrdle.com/): Final Fantasy XIV
 - [Harry Potter](https://www.harrypotterwordle.com/): Harry Potter
