@@ -115,6 +115,7 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Keclap](https://keclap.xyz/): Sundanese
 - [Kelmaly](https://kelmaly.com/): Arabic
 - [Kerdle](https://kerdle.vercel.app/): Cornish/Kernewek (Standard Written Form)
+- [Labzle](https://labzle.netlify.app): Balochi
 - [Latindictionary.io](https://wordle.latindictionary.io/): Latin
 - [Lexoula](https://lexoula.com/): Ελληνικά (Greek)
 - [Malay](https://malay-wordle.netlify.app/): Bahasa Malaysia
@@ -124,7 +125,6 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Parolle.it](https://parolle.it): Italian
 - [Pashtoodle](https://pashtoodle.lingdocs.com): Pashto
 - [Persian](https://www.persian-wordle.ir/): Persian (Farsi)
-- [Persiga](https://www.persi.ga/): Portuguese
 - [Pinyin](https://www.pinyindle.com/): Pinyin (romanization system for Mandarin Chinese)
 - [Rudle](https://rudle.vercel.app): Russian
 - [Sindhal](https://hellosindh.com/sindhal): Sindhi
@@ -132,7 +132,6 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [So'zzana](https://sozzana.netlify.app/): O'zbek (Lotin)
 - [Tatar](https://tatardle.vercel.app/): Tatar (Turkic Language)
 - [Tàu Tâi-gí (Taigi Wordle)](https://tau.taigi.info/): Taigi (Taiwanese)
-- [Telugu](https://teluguwordle.com): Telugu (South Indian Language)
 - [Tlembung](https://tlembung.vercel.app/): Javanese
 - [Tugma](https://tugma.vercel.app): Hiligaynon (spoken in the Philippines)
 - [Ukrainian](https://goroh.pp.ua/games/wordle): Ukrainian
@@ -150,12 +149,10 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Žodelė](https://zodele.lt): Lithuanian
 - [Слівце](https://slivce.com/): Ukrainian
 - [ਪੰਜਾਬੀ](https://punjabipuzzle.netlify.app/): Punjabi
-- [சொல்லாடல் Soladle](https://omtamil.com/soladle): Tamil
 - [字知之明](https://zedaizd.github.io/zh-char-puzzle/): Traditional Chinese
 - [꼬들 - 한국어](https://belorin.github.io/): Korean
 - [한글 풀어쓰기 5자](https://nakosung.github.io/wordle/): Korean
 - [ไทย](https://buddhistuniversity.net/wordle-thai/): Thai
-- [ಕನ್ನಡ](https://www.aksharabandha.co.in/): Kannada
 
 ### Fun themes
 
