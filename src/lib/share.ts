@@ -1,14 +1,7 @@
-import { UAParser } from 'ua-parser-js'
-
 import { MAX_CHALLENGES } from '../constants/settings'
 import { GAME_TITLE } from '../constants/strings'
 import { getGuessStatuses } from './statuses'
 import { solutionIndex, unicodeSplit } from './words'
-
-const webShareApiDeviceTypes: string[] = ['mobile', 'smarttv', 'wearable']
-const parser = new UAParser()
-const browser = parser.getBrowser()
-const device = parser.getDevice()
 
 export const shareStatus = (
   solution: string,
@@ -35,10 +28,8 @@ export const shareStatus = (
   let shareSuccess = false
 
   try {
-    if (attemptShare(shareData)) {
-      navigator.share(shareData)
-      shareSuccess = true
-    }
+    window.webxdc.sendToChat(shareData)
+    shareSuccess = true
   } catch (error) {
     shareSuccess = false
   }
@@ -83,17 +74,6 @@ export const generateEmojiGrid = (
         .join('')
     })
     .join('\n')
-}
-
-const attemptShare = (shareData: object) => {
-  return (
-    // Deliberately exclude Firefox Mobile, because its Web Share API isn't working correctly
-    browser.name?.toUpperCase().indexOf('FIREFOX') === -1 &&
-    webShareApiDeviceTypes.indexOf(device.type ?? '') !== -1 &&
-    navigator.canShare &&
-    navigator.canShare(shareData) &&
-    navigator.share
-  )
 }
 
 const getEmojiTiles = (isDarkMode: boolean, isHighContrastMode: boolean) => {

@@ -1,8 +1,9 @@
-# React Wordle
+# Reactle
 
 This is a clone project of the popular word guessing game we all know and love. Made using React, Typescript, and Tailwind.
 
-[**Try out the demo!**](https://reactle.vercel.app/)
+[**Download the latest version**](https://github.com/DeltaZen/reactle/releases/latest/download/draw.xdc), attach to a Delta Chat (or other [WebXDC-capable](https://webxdc.org) client) group and share your drawings!
+
 
 ## Build and run
 
@@ -15,26 +16,6 @@ $> cd react-wordle
 $> npm install
 $> npm run start
 ```
-
-### To build/run docker container:
-
-#### Development
-
-```bash
-$> docker build -t reactle:dev -f docker/Dockerfile .
-$> docker run -d -p 3000:3000 --name reactle-dev reactle:dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in browser.
-
-#### Production
-
-```bash
-$> docker build --target=prod -t reactle:prod -f docker/Dockerfile .
-$> docker run -d -p 80:8080  --name reactle-prod reactle:prod
-```
-
-Open [http://localhost](http://localhost) in browser. See the [entry in the FAQ](#why-does-sharing-of-results-not-work) below about requirements for sharing of results.
 
 ## FAQ
 
@@ -63,7 +44,6 @@ Note that guesses are validated against both the length of the solution, and pre
   - Update the "You need to enable JavaScript" message
   - Update the language attribute in the HTML tag
   - If the language is written right-to-left, add `dir="rtl"` to the HTML tag
-- Update the name and short name in [public/manifest.json](public/manifest.json)
 - Update the strings in [src/constants/strings.ts](src/constants/strings.ts)
 - Add all of the five letter words in the language to [src/constants/validGuesses.ts](src/constants/validGuesses.ts), replacing the English words
 - Add a list of goal words in the language to [src/constants/wordlist.ts](src/constants/wordlist.ts), replacing the English words
@@ -81,22 +61,6 @@ Note that guesses are validated against both the length of the solution, and pre
   [src/lib/share.ts](src/lib/share.ts)
 - To enable replaying past days' games, set `ENABLE_ARCHIVED_GAMES` to `true`
 - Set `DATE_LOCALE` to a suitable locale string as defined in [date-fns](https://github.com/date-fns/date-fns/tree/main/src/locale).
-
-### How can I add usage tracking?
-
-This repository includes support for Google Analytics or [Plausible Analytics](https://plausible.io), but, by default, this is disabled.
-
-To enable Google Analytics:
-
-- Create a Google Analytics 4 property and obtain the measurement ID (of the format `G-XXXXXXXXXX`)
-- In [.env](.env), add `REACT_APP_GOOGLE_MEASUREMENT_ID=G-XXXXXXXXXX`
-
-Keep in mind that your region might have legislation about obtaining a user's consent before enabling trackers. This is up to downstream repos to implement.
-
-To enable Plausible Analytics:
-
-- Create a new website with Plausible Analytics with a given domain, e.g. `example.app`
-- In [.env](.env), add `REACT_APP_PLAUSIBLE_DOMAIN=example.app`
 
 ### Why does sharing of results not work?
 
