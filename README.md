@@ -17,6 +17,12 @@ $> npm install
 $> npm run start
 ```
 
+### To build the .xdc file:
+
+```bash
+$> npm run build
+```
+
 ## FAQ
 
 ### How can I change the length of a guess?
