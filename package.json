@@ -1,9 +1,7 @@
 {
-  "name": "game",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "react-scripts build",
+    "build": "react-scripts build && ./create-xdc.sh",
     "eject": "react-scripts eject",
     "fix": "prettier --write src",
     "lint": "prettier --check src",

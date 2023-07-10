@@ -255,6 +255,11 @@ function App() {
         if (isLatestGame) {
           setStats(addStatsForCompletedGame(stats, guesses.length))
         }
+        const name = window.webxdc.selfName
+        const info = `${name} guessed the word of the day! 🎉 ${
+          guesses.length + 1
+        }/${MAX_CHALLENGES}`
+        window.webxdc.sendUpdate({ payload: null, info: info }, info)
         return setIsGameWon(true)
       }
 
@@ -262,6 +267,9 @@ function App() {
         if (isLatestGame) {
           setStats(addStatsForCompletedGame(stats, guesses.length + 1))
         }
+        const name = window.webxdc.selfName
+        const info = `${name} failed to guess the word of the day 😅 X/${MAX_CHALLENGES}`
+        window.webxdc.sendUpdate({ payload: null, info: info }, info)
         setIsGameLost(true)
         showErrorAlert(CORRECT_WORD_MESSAGE(solution), {
           persist: true,
