@@ -4,6 +4,8 @@ import { DELETE_TEXT, ENTER_TEXT } from '../../constants/strings'
 import { getStatuses } from '../../lib/statuses'
 import { localeAwareUpperCase } from '../../lib/words'
 import { Key } from './Key'
+import { getLanguage } from '../../lib/localStorage'
+import { WORDLISTS } from '../../constants/wordlist'
 
 type Props = {
   onChar: (value: string) => void
@@ -54,10 +56,12 @@ export const Keyboard = ({
     }
   }, [onEnter, onDelete, onChar])
 
+  const keyboard = WORDLISTS[getLanguage()].keyboard
+
   return (
     <div>
       <div className="mb-1 flex justify-center">
-        {['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'].map((key) => (
+        {keyboard[0].map((key) => (
           <Key
             value={key}
             key={key}
@@ -68,7 +72,7 @@ export const Keyboard = ({
         ))}
       </div>
       <div className="mb-1 flex justify-center">
-        {['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'].map((key) => (
+        {keyboard[1].map((key) => (
           <Key
             value={key}
             key={key}
@@ -82,7 +86,7 @@ export const Keyboard = ({
         <Key width={65.4} value="ENTER" onClick={onClick}>
           {ENTER_TEXT}
         </Key>
-        {['Z', 'X', 'C', 'V', 'B', 'N', 'M'].map((key) => (
+        {keyboard[2].map((key) => (
           <Key
             value={key}
             key={key}

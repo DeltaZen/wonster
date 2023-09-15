@@ -1,5 +1,9 @@
-const gameStateKey = 'gameState'
-const archiveGameStateKey = 'archiveGameState'
+import { WORDLISTS } from "../constants/wordlist"
+
+const lang = getLanguage()
+
+const gameStateKey = 'gameState_' + lang
+const archiveGameStateKey = 'archiveGameState_' + lang
 const highContrastKey = 'highContrast'
 
 export type StoredGameState = {
@@ -52,4 +56,13 @@ export const setStoredIsHighContrastMode = (isHighContrast: boolean) => {
 export const getStoredIsHighContrastMode = () => {
   const highContrast = localStorage.getItem(highContrastKey)
   return highContrast === '1'
+}
+
+
+export function getLanguage() {
+  let selected_lang: keyof typeof WORDLISTS = localStorage.getItem("selected_lang") as keyof typeof WORDLISTS || "en"
+  if (!Object.keys(WORDLISTS).includes(selected_lang)) {
+    selected_lang = "en"
+  }
+  return selected_lang
 }

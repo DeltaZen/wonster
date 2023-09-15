@@ -11,17 +11,18 @@ import queryString from 'query-string'
 import { ENABLE_ARCHIVED_GAMES } from '../constants/settings'
 import { NOT_CONTAINED_MESSAGE, WRONG_SPOT_MESSAGE } from '../constants/strings'
 import { VALID_GUESSES } from '../constants/validGuesses'
-import { WORDS } from '../constants/wordlist'
 import { getToday } from './dateutils'
 import { getGuessStatuses } from './statuses'
+import { EN_WORDLIST } from '../constants/wordlists/wordlist.en'
+import { WORDLISTS } from '../constants/wordlist'
 
 // 1 January 2022 Game Epoch
 export const firstGameDate = new Date(2022, 0)
 export const periodInDays = 1
 
-export const isWordInWordList = (word: string) => {
+export const isWordInWordList = (word: string, wordlist: string[]) => {
   return (
-    WORDS.includes(localeAwareLowerCase(word)) ||
+    wordlist.includes(localeAwareLowerCase(word)) ||
     VALID_GUESSES.includes(localeAwareLowerCase(word))
   )
 }
@@ -118,18 +119,18 @@ export const getIndex = (gameDate: Date) => {
   return index
 }
 
-export const getWordOfDay = (index: number) => {
+export const getWordOfDay = (index: number, wordlist: string[]) => {
   if (index < 0) {
     throw new Error('Invalid index')
   }
 
-  return localeAwareUpperCase(WORDS[index % WORDS.length])
+  return localeAwareUpperCase(wordlist[index % wordlist.length])
 }
 
-export const getSolution = (gameDate: Date) => {
+export const getSolution = (gameDate: Date, wordlist: string[]) => {
   const nextGameDate = getNextGameDate(gameDate)
   const index = getIndex(gameDate)
-  const wordOfTheDay = getWordOfDay(index)
+  const wordOfTheDay = getWordOfDay(index, wordlist)
   return {
     solution: wordOfTheDay,
     solutionGameDate: gameDate,
@@ -176,5 +177,9 @@ export const getIsLatestGame = () => {
   return parsed === null || !('d' in parsed)
 }
 
+export function getSelectedWordlist() {
+  return WORDLISTS[localStorage.getItem("selected_lang") as keyof typeof WORDLISTS || "en"]?.words || EN_WORDLIST
+}
+
 export const { solution, solutionGameDate, solutionIndex, tomorrow } =
-  getSolution(getGameDate())
+  getSolution(getGameDate(), getSelectedWordlist())
