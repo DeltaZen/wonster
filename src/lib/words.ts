@@ -11,10 +11,10 @@ import queryString from 'query-string'
 import { ENABLE_ARCHIVED_GAMES } from '../constants/settings'
 import { NOT_CONTAINED_MESSAGE, WRONG_SPOT_MESSAGE } from '../constants/strings'
 import { VALID_GUESSES } from '../constants/validGuesses'
+import { WORDLISTS } from '../constants/wordlist'
+import { EN_WORDLIST } from '../constants/wordlists/wordlist.en'
 import { getToday } from './dateutils'
 import { getGuessStatuses } from './statuses'
-import { EN_WORDLIST } from '../constants/wordlists/wordlist.en'
-import { WORDLISTS } from '../constants/wordlist'
 
 // 1 January 2022 Game Epoch
 export const firstGameDate = new Date(2022, 0)
@@ -179,7 +179,11 @@ export const getIsLatestGame = () => {
 
 export function getSelectedWordlist() {
   // console.log("generating word for selected_lang: ", localStorage.getItem("selected_lang"));
-  return WORDLISTS[localStorage.getItem("selected_lang") as keyof typeof WORDLISTS || "en"]?.words || EN_WORDLIST
+  return (
+    WORDLISTS[
+      (localStorage.getItem('selected_lang') as keyof typeof WORDLISTS) || 'en'
+    ]?.words || EN_WORDLIST
+  )
 }
 
 export const { solution, solutionGameDate, solutionIndex, tomorrow } =

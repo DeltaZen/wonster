@@ -48,7 +48,7 @@
   animation-name: revealPresentCharCell;
 }
 
-.cell-reveal>.letter-container {
+.cell-reveal > .letter-container {
   animation: offsetLetterFlip 0.35s linear;
   animation-fill-mode: backwards;
 }
@@ -305,7 +305,6 @@ svg.cursor-pointer:hover {
 .react-datepicker__day--range-end {
   @apply bg-indigo-600 text-white hover:bg-white hover:text-gray-700;
 }
-
 
 select.language-select {
   appearance: none;

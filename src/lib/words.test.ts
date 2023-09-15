@@ -1,4 +1,5 @@
 import { EN_WORDLIST } from '@/constants/wordlists/wordlist.en'
+
 import {
   getIndex,
   getLastGameDate,

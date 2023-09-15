@@ -14,6 +14,7 @@ import {
   SHARE_TEXT,
   STATISTICS_TITLE,
 } from '../../constants/strings'
+import { WORDLISTS } from '../../constants/wordlist'
 import { GameStats, getLanguage } from '../../lib/localStorage'
 import { shareStatus } from '../../lib/share'
 import { solutionGameDate, tomorrow } from '../../lib/words'
@@ -21,7 +22,6 @@ import { Histogram } from '../stats/Histogram'
 import { MigrationIntro } from '../stats/MigrationIntro'
 import { StatBar } from '../stats/StatBar'
 import { BaseModal } from './BaseModal'
-import { WORDLISTS } from '../../constants/wordlist'
 
 type Props = {
   isOpen: boolean
@@ -61,7 +61,7 @@ export const StatsModal = ({
   if (gameStats.totalGames <= 0) {
     return (
       <BaseModal
-        title={STATISTICS_TITLE + " " + WORDLISTS[getLanguage()].label}
+        title={STATISTICS_TITLE + ' ' + WORDLISTS[getLanguage()].label}
         isOpen={isOpen}
         handleClose={handleClose}
       >
@@ -74,7 +74,7 @@ export const StatsModal = ({
   }
   return (
     <BaseModal
-      title={STATISTICS_TITLE + " " + WORDLISTS[getLanguage()].label}
+      title={STATISTICS_TITLE + ' ' + WORDLISTS[getLanguage()].label}
       isOpen={isOpen}
       handleClose={handleClose}
     >

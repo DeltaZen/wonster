@@ -1,4 +1,4 @@
-import { WORDLISTS } from "../constants/wordlist"
+import { WORDLISTS } from '../constants/wordlist'
 
 const lang = getLanguage()
 
@@ -58,11 +58,11 @@ export const getStoredIsHighContrastMode = () => {
   return highContrast === '1'
 }
 
-
 export function getLanguage() {
-  let selected_lang: keyof typeof WORDLISTS = localStorage.getItem("selected_lang") as keyof typeof WORDLISTS || "en"
+  let selected_lang: keyof typeof WORDLISTS =
+    (localStorage.getItem('selected_lang') as keyof typeof WORDLISTS) || 'en'
   if (!Object.keys(WORDLISTS).includes(selected_lang)) {
-    selected_lang = "en"
+    selected_lang = 'en'
   }
   return selected_lang
 }

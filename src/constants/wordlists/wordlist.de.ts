@@ -1,6 +1,6 @@
 /**
  * extracted from https://raw.githubusercontent.com/davidak/wortliste/master/wortliste.txt
- * 
+ *
  * ```
  * wget https://raw.githubusercontent.com/davidak/wortliste/master/wortliste.txt
  * cat wortliste.txt | grep -E '^.{5}$' | tr '[:upper:]' '[:lower:]' > german_words.txt
@@ -6154,4 +6154,4 @@ zülle
 übrig
 übten
 übung
-üppig`.split("\n")
+üppig`.split('\n')

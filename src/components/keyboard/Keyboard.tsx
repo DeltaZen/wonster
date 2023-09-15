@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
 
 import { DELETE_TEXT, ENTER_TEXT } from '../../constants/strings'
+import { WORDLISTS } from '../../constants/wordlist'
+import { getLanguage } from '../../lib/localStorage'
 import { getStatuses } from '../../lib/statuses'
 import { localeAwareUpperCase } from '../../lib/words'
 import { Key } from './Key'
-import { getLanguage } from '../../lib/localStorage'
-import { WORDLISTS } from '../../constants/wordlist'
 
 type Props = {
   onChar: (value: string) => void

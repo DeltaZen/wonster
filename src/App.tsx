@@ -33,6 +33,7 @@ import {
   WIN_MESSAGES,
   WORD_NOT_FOUND_MESSAGE,
 } from './constants/strings'
+import { WORDLISTS } from './constants/wordlist'
 import { useAlert } from './context/AlertContext'
 import { isInAppBrowser } from './lib/browser'
 import {
@@ -55,7 +56,6 @@ import {
   solutionGameDate,
   unicodeLength,
 } from './lib/words'
-import { WORDLISTS } from './constants/wordlist'
 
 function App() {
   const isLatestGame = getIsLatestGame()
