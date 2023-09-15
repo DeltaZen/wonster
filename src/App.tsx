@@ -33,9 +33,11 @@ import {
   WIN_MESSAGES,
   WORD_NOT_FOUND_MESSAGE,
 } from './constants/strings'
+import { WORDLISTS } from './constants/wordlist'
 import { useAlert } from './context/AlertContext'
 import { isInAppBrowser } from './lib/browser'
 import {
+  getLanguage,
   getStoredIsHighContrastMode,
   loadGameStateFromLocalStorage,
   saveGameStateToLocalStorage,
@@ -46,6 +48,7 @@ import {
   findFirstUnusedReveal,
   getGameDate,
   getIsLatestGame,
+  getSelectedWordlist,
   isWinningWord,
   isWordInWordList,
   setGameDate,
@@ -216,7 +219,7 @@ function App() {
       })
     }
 
-    if (!isWordInWordList(currentGuess)) {
+    if (!isWordInWordList(currentGuess, getSelectedWordlist())) {
       setCurrentRowClass('jiggle')
       return showErrorAlert(WORD_NOT_FOUND_MESSAGE, {
         onClose: clearCurrentRowClass,
@@ -251,12 +254,14 @@ function App() {
       setGuesses([...guesses, currentGuess])
       setCurrentGuess('')
 
+      const language_label = WORDLISTS[getLanguage()].label
+
       if (winningWord) {
         if (isLatestGame) {
           setStats(addStatsForCompletedGame(stats, guesses.length))
         }
         const name = window.webxdc.selfName
-        const info = `${name} guessed the word of the day! 🎉 ${
+        const info = `[${language_label}] ${name} guessed the word of the day! 🎉 ${
           guesses.length + 1
         }/${MAX_CHALLENGES}`
         window.webxdc.sendUpdate({ payload: null, info: info }, info)
@@ -268,7 +273,7 @@ function App() {
           setStats(addStatsForCompletedGame(stats, guesses.length + 1))
         }
         const name = window.webxdc.selfName
-        const info = `${name} failed to guess the word of the day 😅 X/${MAX_CHALLENGES}`
+        const info = `[${language_label}] ${name} failed to guess the word of the day 😅 X/${MAX_CHALLENGES}`
         window.webxdc.sendUpdate({ payload: null, info: info }, info)
         setIsGameLost(true)
         showErrorAlert(CORRECT_WORD_MESSAGE(solution), {

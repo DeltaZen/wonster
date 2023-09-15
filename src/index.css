@@ -88,15 +88,18 @@ svg.cursor-pointer:hover {
     border-color: var(--default-cell-border-color);
     color: var(--default-cell-text-color);
   }
+
   50% {
     background-color: var(--default-cell-bg-color);
     border-color: var(--default-cell-border-color);
     color: var(--default-cell-text-color);
   }
+
   50.1% {
     background-color: var(--absent-cell-bg-color);
     border-color: var(--absent-cell-bg-color);
   }
+
   100% {
     transform: rotateX(180deg);
   }
@@ -109,15 +112,18 @@ svg.cursor-pointer:hover {
     border-color: var(--default-cell-border-color);
     color: var(--default-cell-text-color);
   }
+
   50% {
     background-color: var(--default-cell-bg-color);
     border-color: var(--default-cell-border-color);
     color: var(--default-cell-text-color);
   }
+
   50.1% {
     background-color: var(--correct-cell-bg-color);
     border-color: var(--correct-cell-bg-color);
   }
+
   100% {
     transform: rotateX(180deg);
   }
@@ -130,15 +136,18 @@ svg.cursor-pointer:hover {
     border-color: var(--default-cell-border-color);
     color: var(--default-cell-text-color);
   }
+
   50% {
     background-color: var(--default-cell-bg-color);
     border-color: var(--default-cell-border-color);
     color: var(--default-cell-text-color);
   }
+
   50.1% {
     background-color: var(--present-cell-bg-color);
     border-color: var(--present-cell-bg-color);
   }
+
   100% {
     transform: rotateX(180deg);
   }
@@ -149,6 +158,7 @@ svg.cursor-pointer:hover {
   0% {
     transform: rotateX(0deg);
   }
+
   100% {
     transform: rotateX(180deg);
   }
@@ -176,15 +186,19 @@ svg.cursor-pointer:hover {
   0% {
     transform: translate(0, 0);
   }
+
   25% {
     transform: translate(-0.5rem, 0);
   }
+
   50% {
     transform: translate(0.5rem, 0);
   }
+
   75% {
     transform: translate(-0.5rem, 0);
   }
+
   100% {
     transform: translate(0, 0);
   }
@@ -290,4 +304,13 @@ svg.cursor-pointer:hover {
 
 .react-datepicker__day--range-end {
   @apply bg-indigo-600 text-white hover:bg-white hover:text-gray-700;
+}
+
+select.language-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  background: none;
 }

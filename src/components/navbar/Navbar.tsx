@@ -4,9 +4,11 @@ import {
   CogIcon,
   InformationCircleIcon,
 } from '@heroicons/react/outline'
+import { ChangeEvent, useRef } from 'react'
 
 import { ENABLE_ARCHIVED_GAMES } from '../../constants/settings'
 import { GAME_TITLE } from '../../constants/strings'
+import { WORDLISTS } from '../../constants/wordlist'
 
 type Props = {
   setIsInfoModalOpen: (value: boolean) => void
@@ -21,6 +23,19 @@ export const Navbar = ({
   setIsDatePickerModalOpen,
   setIsSettingsModalOpen,
 }: Props) => {
+  let selected_lang: keyof typeof WORDLISTS =
+    (localStorage.getItem('selected_lang') as keyof typeof WORDLISTS) || 'en'
+  if (!Object.keys(WORDLISTS).includes(selected_lang)) {
+    selected_lang = 'en'
+  }
+  const selector = useRef<HTMLSelectElement | null>(null)
+  const onSelectLang = (ev: ChangeEvent) => {
+    if (selector.current?.value) {
+      localStorage.setItem('selected_lang', selector.current.value)
+      window.location.reload()
+    }
+  }
+
   return (
     <div className="navbar">
       <div className="navbar-content px-5 short:h-auto">
@@ -35,6 +50,20 @@ export const Navbar = ({
               onClick={() => setIsDatePickerModalOpen(true)}
             />
           )}
+          <select
+            className="language-select ml-3 h-6 w-12 cursor-pointer font-bold dark:text-white"
+            onChange={onSelectLang}
+            ref={selector}
+            defaultValue={selected_lang}
+          >
+            {Object.keys(WORDLISTS).map((code) => {
+              return (
+                <option key={code} value={code}>
+                  {WORDLISTS[code as keyof typeof WORDLISTS]?.label}
+                </option>
+              )
+            })}
+          </select>
         </div>
         <p className="text-xl font-bold dark:text-white">{GAME_TITLE}</p>
         <div className="right-icons">
