@@ -178,6 +178,7 @@ export const getIsLatestGame = () => {
 }
 
 export function getSelectedWordlist() {
+  // console.log("generating word for selected_lang: ", localStorage.getItem("selected_lang"));
   return WORDLISTS[localStorage.getItem("selected_lang") as keyof typeof WORDLISTS || "en"]?.words || EN_WORDLIST
 }
 
