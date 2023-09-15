@@ -49,9 +49,9 @@ export const Navbar = ({
               onClick={() => setIsDatePickerModalOpen(true)}
             />
           )}
-          <select className="language-select h-6 w-12 ml-3 cursor-pointer dark:text-white font-bold" onChange={onSelectLang} ref={selector}>
+          <select className="language-select h-6 w-12 ml-3 cursor-pointer dark:text-white font-bold" onChange={onSelectLang} ref={selector} defaultValue={selected_lang}>
             {Object.keys(WORDLISTS).map((code) => {
-              return <option value={code} selected={selected_lang === code}>{WORDLISTS[code as keyof typeof WORDLISTS]?.label}</option>
+              return <option key={code} value={code} >{WORDLISTS[code as keyof typeof WORDLISTS]?.label}</option>
             })}
           </select>
         </div>
@@ -68,6 +68,6 @@ export const Navbar = ({
         </div>
       </div>
       <hr></hr>
-    </div>
+    </div >
   )
 }
