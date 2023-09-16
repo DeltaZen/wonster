@@ -72,7 +72,7 @@ export function getLanguage() {
 export function exportMigration(): MigrationStats {
   const result: MigrationStats = {} as unknown as MigrationStats
   for (let code of Object.keys(WORDLISTS) as (keyof typeof WORDLISTS)[]) {
-    const stats = localStorage.getItem('gameStats_' + lang)
+    const stats = localStorage.getItem('gameStats_' + code)
     const state = localStorage.getItem('gameState_' + code)
     result[code] = {
       statistics: stats ? (JSON.parse(stats) as GameStats) : null,
