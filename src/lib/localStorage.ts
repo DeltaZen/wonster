@@ -1,3 +1,5 @@
+import { MigrationStats } from '@/components/modals/MigrateStatsModal'
+
 import { WORDLISTS } from '../constants/wordlist'
 
 const lang = getLanguage()
@@ -25,7 +27,7 @@ export const loadGameStateFromLocalStorage = (isLatestGame: boolean) => {
   return state ? (JSON.parse(state) as StoredGameState) : null
 }
 
-const gameStatKey = 'gameStats'
+const gameStatKey = 'gameStats_' + lang
 
 export type GameStats = {
   winDistribution: number[]
@@ -65,4 +67,37 @@ export function getLanguage() {
     selected_lang = 'en'
   }
   return selected_lang
+}
+
+export function exportMigration(): MigrationStats {
+  const result: MigrationStats = {} as unknown as MigrationStats
+  for (let code of Object.keys(WORDLISTS) as (keyof typeof WORDLISTS)[]) {
+    const stats = localStorage.getItem('gameStats_' + lang)
+    const state = localStorage.getItem('gameState_' + code)
+    result[code] = {
+      statistics: stats ? (JSON.parse(stats) as GameStats) : null,
+      gameState: state ? (JSON.parse(state) as StoredGameState) : null,
+    }
+  }
+  return result
+}
+
+export function importMigration(stats: MigrationStats) {
+  for (let code of Object.keys(WORDLISTS) as (keyof typeof WORDLISTS)[]) {
+    if (stats[code]) {
+      const migrationStats = stats[code]
+      if (migrationStats.gameState) {
+        localStorage.setItem(
+          'gameState_' + code,
+          JSON.stringify(migrationStats.gameState)
+        )
+      }
+      if (migrationStats.statistics) {
+        localStorage.setItem(
+          'gameStats_' + code,
+          JSON.stringify(migrationStats.statistics)
+        )
+      }
+    }
+  }
 }
