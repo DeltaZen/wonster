@@ -2,10 +2,7 @@ import { SaveIcon } from '@heroicons/react/outline'
 import { useState } from 'react'
 
 import { decrypt } from '../../lib/encryption'
-import {
-  saveGameStateToLocalStorage,
-  saveStatsToLocalStorage,
-} from '../../lib/localStorage'
+import { importMigration } from '../../lib/localStorage'
 import { MigrationStats } from '../modals/MigrateStatsModal'
 
 export const ImmigratePanel = () => {
@@ -34,7 +31,8 @@ export const ImmigratePanel = () => {
         const migrationStats = JSON.parse(decrypt(text) ?? '') as MigrationStats
         if (
           !migrationStats ||
-          (!migrationStats.gameState && !migrationStats.statistics)
+          (migrationStats as any).gameState ||
+          (migrationStats as any).statistics
         ) {
           textareaClassNames.invalid.forEach((cn) => textarea.classList.add(cn))
           return
@@ -63,13 +61,7 @@ export const ImmigratePanel = () => {
       ) as MigrationStats
       if (!migrationStats) return
 
-      if (migrationStats.gameState) {
-        saveGameStateToLocalStorage(true, migrationStats.gameState)
-      }
-
-      if (migrationStats.statistics) {
-        saveStatsToLocalStorage(migrationStats.statistics)
-      }
+      importMigration(migrationStats)
 
       alert('The site will now reload.')
 

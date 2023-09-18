@@ -3,20 +3,14 @@ import { useState } from 'react'
 
 import { copyTextToClipboard } from '../../lib/clipboard'
 import { encrypt } from '../../lib/encryption'
-import { loadGameStateFromLocalStorage } from '../../lib/localStorage'
-import { loadStats } from '../../lib/stats'
+import { exportMigration } from '../../lib/localStorage'
 import { MigrationStats } from '../modals/MigrateStatsModal'
 
 export const EmigratePanel = () => {
   const [isCopyButtonEnabled, setIsCopyButtonEnabled] = useState(true)
   const [copyButtonText, setCopyButtonText] = useState('Copy')
-  const stats = loadStats()
-  const gameState = loadGameStateFromLocalStorage(true)
 
-  const migrationStats: MigrationStats = {
-    statistics: stats,
-    gameState: gameState,
-  }
+  const migrationStats: MigrationStats = exportMigration()
 
   const emigrationCode = encrypt(JSON.stringify(migrationStats))
 

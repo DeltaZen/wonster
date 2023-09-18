@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import { WORDLISTS } from '@/constants/wordlist'
+
 import { GameStats, StoredGameState } from '../../lib/localStorage'
 import { EmigratePanel } from '../stats/EmigratePanel'
 import { ImmigratePanel } from '../stats/ImmigratePanel'
@@ -11,8 +13,10 @@ type Props = {
 }
 
 export type MigrationStats = {
-  statistics: GameStats
-  gameState: StoredGameState | null
+  [key in keyof typeof WORDLISTS]: {
+    statistics: GameStats | null
+    gameState: StoredGameState | null
+  }
 }
 
 export const MigrateStatsModal = ({ isOpen, handleClose }: Props) => {
