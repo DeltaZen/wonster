@@ -1,6 +1,7 @@
 import { DE_WORDLIST } from './wordlists/wordlist.de'
 import { EN_WORDLIST } from './wordlists/wordlist.en'
 import { ES_WORDLIST } from './wordlists/wordlist.es'
+import { LA_WORDLIST } from './wordlists/wordlist.la'
 import { IT_WORDLIST } from './wordlists/wordlist.it'
 import { RU_WORDLIST } from './wordlists/wordlist.ru'
 
@@ -31,6 +32,7 @@ export const WORDLISTS = {
     keyboard:
       EN_KEYBOARD /* the wordlist does not contain tildes, only english letters */,
   },
+  la: { label: `🏴‍☠️LATIN`, words: LA_WORDLIST, keyboard: EN_KEYBOARD },
   ru: { label: `🇷🇺RU`, words: RU_WORDLIST, keyboard: RU_KEYBOARD },
   it: { label: `🇮🇹IT`, words: IT_WORDLIST, keyboard: EN_KEYBOARD },
 }
