@@ -68,7 +68,6 @@ abran
 absim
 absis
 absit
-absit
 absum
 abusa
 abusi
@@ -117,7 +116,6 @@ acidi
 acido
 aciem
 acies
-acies
 acili
 acilo
 acina
@@ -145,7 +143,6 @@ acrem
 acres
 acria
 acris
-acris
 acron
 acrum
 actae
@@ -158,15 +155,11 @@ actia
 actii
 actin
 actio
-actio
 actis
-actor
 actor
 actos
 actui
 actum
-actum
-actus
 actus
 acuam
 acuas
@@ -177,8 +170,6 @@ acuis
 acuit
 acula
 acuta
-acuta
-acute
 acute
 acuti
 acuto
@@ -231,7 +222,6 @@ adfin
 adfui
 adhoc
 adhuc
-adhuc
 adias
 adibo
 adice
@@ -247,7 +237,6 @@ adina
 adipe
 adipi
 adips
-adire
 adire
 adiri
 adita
@@ -296,9 +285,7 @@ aedan
 aeddi
 aedem
 aedes
-aedes
 aedil
-aedis
 aedis
 aedon
 aedos
@@ -310,7 +297,6 @@ aegas
 aegea
 aegei
 aeger
-aeger
 aeges
 aegii
 aegio
@@ -320,7 +306,6 @@ aegla
 aegle
 aegon
 aegos
-aegra
 aegra
 aegre
 aegri
@@ -342,12 +327,8 @@ aenos
 aenum
 aenus
 aequa
-aequa
-aeque
 aeque
 aequi
-aequi
-aequo
 aequo
 aerae
 aeram
@@ -362,7 +343,6 @@ aeria
 aerii
 aerio
 aeris
-aeris
 aeros
 aerum
 aesim
@@ -372,7 +352,6 @@ aesti
 aestu
 aesum
 aetan
-aetas
 aetas
 aetem
 aeter
@@ -416,9 +395,7 @@ agavy
 agdus
 agema
 agens
-agens
 agent
-agere
 agere
 aggar
 aggei
@@ -445,7 +422,6 @@ agito
 agius
 aglaa
 aglao
-agmen
 agmen
 agnae
 agnam
@@ -580,7 +556,6 @@ alhun
 aliam
 alian
 alias
-alias
 alibi
 alica
 alide
@@ -599,10 +574,7 @@ alite
 aliti
 alito
 aliud
-aliud
 alium
-alium
-alius
 alius
 aliut
 alivd
@@ -649,14 +621,11 @@ altem
 alten
 alteo
 alter
-alter
 altis
 altoa
 altor
 altos
 altum
-altum
-altus
 altus
 aluem
 aluic
@@ -686,7 +655,6 @@ amans
 amant
 amara
 amare
-amare
 amari
 amaro
 amasa
@@ -708,16 +676,13 @@ amena
 ameni
 ameno
 amens
-amens
 ament
 amere
 amian
 amica
 amice
 amici
-amici
 amicl
-amico
 amico
 amics
 amicu
@@ -737,7 +702,6 @@ ammon
 amnam
 amnem
 amnes
-amnis
 amnis
 amnon
 amodo
@@ -805,11 +769,8 @@ anila
 anile
 anili
 anima
-anima
 anime
 animi
-animi
-animo
 animo
 anims
 animu
@@ -834,7 +795,6 @@ annui
 annum
 annuo
 annus
-annus
 anoma
 anona
 anone
@@ -846,7 +806,6 @@ ansis
 ansul
 antae
 antam
-antea
 antea
 antei
 antem
@@ -919,8 +878,6 @@ aptir
 aptis
 aptos
 aptum
-aptum
-aptus
 aptus
 apuam
 apula
@@ -979,7 +936,6 @@ arcos
 arcui
 arcum
 arcus
-arcus
 ardae
 ardea
 ardem
@@ -988,8 +944,6 @@ ardes
 ardet
 ardon
 ardor
-ardor
-ardua
 ardua
 ardue
 ardui
@@ -1107,12 +1061,10 @@ artem
 artes
 artet
 artis
-artis
 artoa
 artos
 artua
 artum
-artus
 artus
 aruba
 arudo
@@ -1165,7 +1117,6 @@ asopo
 asoth
 asoti
 aspar
-asper
 asper
 aspim
 aspis
@@ -1234,8 +1185,6 @@ atoni
 atquc
 atqud
 atque
-atque
-atqui
 atqui
 atquo
 atrae
@@ -1274,15 +1223,12 @@ auctu
 aucus
 audac
 audax
-audax
 auden
-audeo
 audeo
 audes
 audet
 audii
 audin
-audio
 audio
 audis
 audit
@@ -1296,7 +1242,6 @@ augis
 augit
 augon
 augur
-augur
 aulae
 aulai
 aulam
@@ -1309,12 +1254,10 @@ aulla
 aulon
 aulum
 aurae
-aurae
 aurai
 auram
 auran
 auras
-aurea
 aurea
 aurec
 auree
@@ -1327,8 +1270,6 @@ auria
 aurig
 aurio
 auris
-auris
-aurum
 aurum
 ausae
 ausam
@@ -1341,13 +1282,10 @@ ausis
 ausit
 ausos
 ausum
-ausum
 ausur
-ausus
 ausus
 autas
 autea
-autem
 autem
 auten
 auter
@@ -1564,7 +1502,6 @@ bears
 beata
 beate
 beati
-beati
 beato
 bebai
 bebba
@@ -1592,16 +1529,12 @@ belga
 belia
 belis
 bella
-bella
 belle
 belli
-belli
-bello
 bello
 bellu
 belma
 belos
-belua
 belua
 belue
 belum
@@ -1758,7 +1691,6 @@ bolum
 bolus
 bombo
 bonae
-bonae
 bonam
 bonan
 bonas
@@ -1768,8 +1700,6 @@ bonna
 bonni
 bonos
 bonum
-bonum
-bonus
 bonus
 boote
 booti
@@ -1808,8 +1738,6 @@ braym
 breis
 breto
 breve
-breve
-brevi
 brevi
 briam
 brian
@@ -1927,10 +1855,8 @@ cadra
 cadum
 cadus
 caeca
-caeca
 caece
 caeci
-caeco
 caeco
 caede
 caedi
@@ -1938,13 +1864,10 @@ caedo
 caela
 caele
 caeli
-caeli
-caelo
 caelo
 caena
 caene
 caeni
-caeno
 caeno
 caepa
 caepe
@@ -2008,7 +1931,6 @@ camis
 camon
 campe
 campi
-campi
 campo
 camum
 camus
@@ -2020,7 +1942,6 @@ canat
 canda
 canem
 caneo
-canes
 canes
 canet
 canin
@@ -2055,9 +1976,7 @@ capru
 capsa
 capso
 capta
-capta
 capte
-capti
 capti
 capto
 captu
@@ -2065,7 +1984,6 @@ capua
 capud
 capue
 capus
-caput
 caput
 capvi
 capye
@@ -2111,8 +2029,6 @@ carte
 carti
 carui
 carum
-carum
-carus
 carus
 casae
 casai
@@ -2144,7 +2060,6 @@ casto
 casua
 casui
 casum
-casus
 casus
 catae
 catal
@@ -2178,7 +2093,6 @@ caupo
 caura
 cauri
 cauro
-causa
 causa
 cause
 causs
@@ -2250,14 +2164,12 @@ celet
 celio
 celis
 cella
-cella
 celle
 cello
 celmi
 celne
 celos
 celox
-celsa
 celsa
 celse
 celsi
@@ -2320,12 +2232,8 @@ ceros
 cerro
 cerru
 certa
-certa
-certe
 certe
 certi
-certi
-certo
 certo
 certu
 cerua
@@ -2474,10 +2382,8 @@ cipum
 cipus
 cirac
 circa
-circa
 circe
 circi
-circo
 circo
 cirin
 ciris
@@ -2520,7 +2426,6 @@ civem
 cives
 civil
 civis
-civis
 civit
 cixit
 clade
@@ -2531,9 +2436,7 @@ clamo
 cland
 clani
 clara
-clara
 clare
-clari
 clari
 claro
 claud
@@ -2614,7 +2517,6 @@ coena
 coeni
 coeno
 coepi
-coepi
 coesa
 coeto
 coetu
@@ -2661,7 +2563,6 @@ collo
 colom
 colon
 color
-color
 colos
 colpe
 colui
@@ -2676,7 +2577,6 @@ combe
 comei
 comem
 comen
-comes
 comes
 comet
 comic
@@ -2723,7 +2623,6 @@ copae
 copem
 cophi
 copia
-copia
 copie
 copis
 copit
@@ -2739,12 +2638,10 @@ coqui
 coquo
 corae
 coram
-coram
 coras
 corax
 corbe
 corbo
-corda
 corda
 corde
 cordi
@@ -2832,7 +2729,6 @@ creat
 crede
 credi
 credo
-credo
 creed
 crees
 creet
@@ -2871,7 +2767,6 @@ crudo
 cruel
 cruli
 cruor
-cruor
 crura
 crure
 cruri
@@ -2904,7 +2799,6 @@ culmi
 culmo
 culon
 culos
-culpa
 culpa
 culpe
 culpo
@@ -2949,7 +2843,6 @@ cupia
 cupid
 cupii
 cupio
-cupio
 cupis
 cupit
 cupos
@@ -2957,7 +2850,6 @@ cuppe
 cupra
 cupri
 cupro
-curae
 curae
 curai
 curam
@@ -2969,12 +2861,10 @@ curer
 cures
 curet
 curia
-curia
 curie
 curii
 curil
 curio
-curis
 curis
 curre
 curro
@@ -3111,9 +3001,7 @@ dator
 datos
 datto
 datum
-datum
 datur
-datus
 datus
 dauci
 daune
@@ -3133,19 +3021,15 @@ death
 debea
 deben
 debeo
-debeo
 debes
 debet
 debit
-debui
 debui
 debut
 decan
 decas
 decem
-decem
 deceo
-decet
 decet
 decii
 decim
@@ -3154,7 +3038,6 @@ decit
 decla
 decor
 decri
-decus
 decus
 dedam
 dedan
@@ -3222,7 +3105,6 @@ demon
 demos
 demto
 demum
-demum
 demus
 denae
 denas
@@ -3230,7 +3112,6 @@ denda
 denis
 denno
 denos
-densa
 densa
 dense
 densi
@@ -3299,14 +3180,11 @@ dices
 dicet
 dicin
 dicis
-dicis
 dicit
 dicor
 dicta
 dicte
 dicti
-dicti
-dicto
 dicto
 dictu
 dicul
@@ -3324,9 +3202,7 @@ diebu
 diesi
 digma
 digna
-digna
 digne
-digni
 digni
 digno
 dignu
@@ -3392,17 +3268,14 @@ diuma
 diuni
 diurn
 divae
-divae
 divam
 divas
-dives
 dives
 divia
 divin
 divis
 divom
 divos
-divum
 divum
 divus
 dixem
@@ -3415,7 +3288,6 @@ dixti
 dluge
 dneus
 dobur
-doceo
 doceo
 doces
 docet
@@ -3434,7 +3306,6 @@ dolas
 dolat
 dolea
 doleo
-doleo
 doles
 dolet
 dolia
@@ -3442,7 +3313,6 @@ dolii
 dolio
 dolis
 dolon
-dolor
 dolor
 dolos
 dolui
@@ -3463,12 +3333,10 @@ domos
 domui
 domum
 domus
-domus
 donar
 donas
 donat
 donax
-donec
 donec
 donem
 doner
@@ -3478,7 +3346,6 @@ donis
 donna
 donne
 donni
-donum
 donum
 doque
 dorem
@@ -3530,7 +3397,6 @@ druso
 dseis
 duane
 dubia
-dubia
 dubie
 dubii
 dubio
@@ -3546,7 +3412,6 @@ ducem
 duces
 ducet
 ducis
-ducis
 ducit
 ducor
 ducta
@@ -3557,12 +3422,10 @@ ducum
 dudae
 dudia
 dudum
-dudum
 duell
 duice
 duini
 duint
-dulce
 dulce
 dulci
 dumis
@@ -3590,7 +3453,6 @@ durio
 duris
 duros
 durum
-durum
 durus
 duxit
 duxre
@@ -3599,7 +3461,6 @@ dyade
 dyein
 eabae
 eacus
-eadem
 eadem
 ealio
 eamer
@@ -3727,9 +3588,7 @@ egene
 egeni
 egeno
 egens
-egens
 egent
-egere
 egere
 egeri
 egero
@@ -3878,7 +3737,6 @@ emeda
 emeis
 emens
 emere
-emere
 emero
 emesa
 emina
@@ -3892,7 +3750,6 @@ emmam
 emmer
 emoli
 emona
-emori
 emori
 emota
 emoti
@@ -3951,7 +3808,6 @@ enoxy
 ensem
 enses
 ensis
-ensis
 entem
 enter
 entia
@@ -3960,7 +3816,6 @@ entos
 enucl
 enven
 eobba
-eodem
 eodem
 eoden
 eodom
@@ -4021,13 +3876,11 @@ equam
 equas
 equat
 eques
-eques
 equis
 equom
 equor
 equos
 equum
-equus
 equus
 erade
 eradi
@@ -4092,7 +3945,6 @@ errem
 erres
 erret
 erroe
-error
 error
 eruam
 eruar
@@ -4187,7 +4039,6 @@ ethic
 ethio
 ethon
 ethos
-etiam
 etiam
 etian
 etima
@@ -4290,7 +4141,6 @@ exili
 exime
 eximi
 exire
-exire
 exiri
 exist
 exite
@@ -4312,7 +4162,6 @@ expui
 expuo
 exque
 exquo
-exsul
 exsul
 extas
 extat
@@ -4368,13 +4217,10 @@ facie
 facii
 facil
 facio
-facio
-facis
 facis
 facit
 facta
 facte
-facti
 facti
 facto
 factu
@@ -4407,21 +4253,16 @@ falle
 falli
 fallo
 falsa
-falsa
 false
 falsi
-falsi
-falso
 falso
 falto
-famae
 famae
 famam
 famas
 famea
 famem
 famen
-fames
 fames
 famis
 famul
@@ -4435,7 +4276,6 @@ fanni
 fanon
 fante
 fanti
-fanum
 fanum
 faram
 faran
@@ -4475,7 +4315,6 @@ fatis
 fatua
 fatue
 fatui
-fatum
 fatum
 fatuo
 fatur
@@ -4527,7 +4366,6 @@ feles
 felic
 felis
 felix
-felix
 fella
 felle
 felti
@@ -4570,18 +4408,14 @@ ferna
 feror
 feros
 ferox
-ferox
 ferra
 ferre
-ferre
-ferri
 ferri
 ferro
 ferta
 ferte
 ferto
 ferul
-ferum
 ferum
 ferus
 fervo
@@ -4604,7 +4438,6 @@ fetos
 fetui
 fetum
 fetus
-fetus
 feuda
 feudi
 feudo
@@ -4621,7 +4454,6 @@ ficio
 ficis
 ficos
 ficta
-ficta
 ficte
 ficti
 ficto
@@ -4633,10 +4465,8 @@ fidam
 fidas
 fidat
 fidei
-fidei
 fidem
 fiden
-fides
 fides
 fidet
 fidia
@@ -4668,7 +4498,6 @@ filas
 filat
 filex
 filia
-filia
 filii
 filio
 filis
@@ -4697,16 +4526,13 @@ finia
 finie
 finio
 finis
-finis
 finit
 finxi
 fiore
 fires
 firma
-firma
 firme
 firmi
-firmo
 firmo
 fisca
 fisci
@@ -4730,7 +4556,6 @@ fixis
 fixit
 fixon
 fixos
-fixum
 fixum
 fixus
 flame
@@ -4836,19 +4661,15 @@ fores
 foria
 forii
 foris
-foris
 forli
-forma
 forma
 forme
 formi
 formo
 foros
 forte
-forte
 forti
 forto
-forum
 forum
 forus
 fossa
@@ -4870,7 +4691,6 @@ frare
 frate
 fraud
 fraus
-fraus
 frear
 fregi
 fremo
@@ -4881,7 +4701,6 @@ fresa
 frese
 fresi
 freso
-freta
 freta
 freti
 freto
@@ -4897,7 +4716,6 @@ frude
 frudi
 fruex
 fruge
-frugi
 frugi
 fruin
 fruit
@@ -4919,7 +4737,6 @@ fuero
 fufia
 fufii
 fufio
-fugae
 fugae
 fugai
 fugam
@@ -4951,7 +4768,6 @@ fulua
 fului
 fuluo
 fulva
-fulva
 fulvi
 fulvo
 fumas
@@ -4966,15 +4782,12 @@ fumus
 funda
 funde
 fundi
-fundi
-fundo
 fundo
 funem
 funes
 fungi
 fungo
 funis
-funus
 funus
 furax
 furca
@@ -4991,9 +4804,7 @@ furlo
 furni
 furno
 furor
-furor
 furta
-furti
 furti
 furto
 furtu
@@ -5021,7 +4832,6 @@ fusos
 fusse
 fuste
 fusti
-fusum
 fusum
 fusus
 futim
@@ -5065,7 +4875,6 @@ galam
 galat
 galba
 galbe
-galea
 galea
 galee
 galeo
@@ -5171,7 +4980,6 @@ genea
 genei
 genen
 gener
-gener
 genes
 genii
 genio
@@ -5183,7 +4991,6 @@ genti
 genua
 genui
 genum
-genus
 genus
 genva
 georg
@@ -5206,7 +5013,6 @@ gerus
 gervi
 gesan
 gesse
-gessi
 gessi
 gesta
 geste
@@ -5343,12 +5149,10 @@ grani
 grano
 grari
 grata
-grata
 grate
 grati
 grato
 grava
-grave
 grave
 gravi
 great
@@ -5415,14 +5219,12 @@ gzeus
 habat
 haben
 habeo
-habeo
 haber
 habes
 habet
 habis
 habit
 habor
-habui
 habui
 habvi
 hacce
@@ -5507,14 +5309,12 @@ harma
 harpe
 harsa
 harum
-harum
 harus
 hasce
 hasim
 hasne
 hasor
 hasra
-hasta
 hasta
 hasul
 hatto
@@ -5606,7 +5406,6 @@ herbi
 hered
 herem
 heres
-heres
 heret
 heris
 herma
@@ -5620,7 +5419,6 @@ heroe
 heroi
 heron
 heroo
-heros
 heros
 herpo
 herro
@@ -5658,7 +5456,6 @@ hicne
 hictu
 hieme
 hiemi
-hiems
 hiems
 hiens
 hient
@@ -5704,7 +5501,6 @@ hocut
 hodes
 hodic
 hodie
-hodie
 hodio
 hodis
 hodon
@@ -5726,7 +5522,6 @@ homni
 homos
 homou
 honor
-honos
 honos
 honro
 honum
@@ -5975,7 +5770,6 @@ ignem
 igneo
 ignes
 ignis
-ignis
 ihesu
 iibus
 iicet
@@ -6015,7 +5809,6 @@ illeo
 illex
 illia
 illic
-illic
 illim
 illio
 illis
@@ -6024,8 +5817,6 @@ illiu
 illoc
 illos
 illuc
-illuc
-illud
 illud
 illue
 illum
@@ -6036,11 +5827,9 @@ iluam
 iluro
 ilvam
 imago
-imago
 imane
 imaum
 imaus
-imber
 imber
 imbet
 imbue
@@ -6055,7 +5844,6 @@ impar
 imper
 impes
 impia
-impia
 impie
 impii
 impio
@@ -6063,7 +5851,6 @@ impos
 imter
 imula
 imura
-inane
 inane
 inani
 inbet
@@ -6137,7 +5924,6 @@ inoni
 inope
 inopi
 inops
-inops
 inore
 inous
 inpar
@@ -6156,11 +5942,9 @@ insue
 insui
 insul
 inter
-inter
 intio
 intra
 intue
-intus
 intus
 inuit
 inula
@@ -6245,7 +6029,6 @@ ipson
 ipsos
 ipsud
 ipsum
-ipsum
 ipsus
 iptio
 iquam
@@ -6317,8 +6100,6 @@ istob
 istoc
 istos
 istuc
-istuc
-istud
 istud
 istum
 istus
@@ -6474,13 +6255,11 @@ labda
 labem
 labeo
 labes
-labes
 labet
 labia
 labii
 labio
 labis
-labor
 labor
 labos
 labra
@@ -6497,7 +6276,6 @@ lacti
 lacto
 lacui
 lacum
-lacus
 lacus
 ladae
 ladan
@@ -6517,12 +6295,10 @@ laese
 laesi
 laeso
 laeta
-laeta
 laete
 laeti
 laeto
 laetu
-laeva
 laeva
 laevi
 laevo
@@ -6633,13 +6409,10 @@ latos
 latro
 latta
 latum
-latum
-latus
 latus
 lauda
 laude
 laudi
-laudo
 laudo
 laura
 laure
@@ -6690,9 +6463,7 @@ lecha
 lechi
 lecin
 lecta
-lecta
 lecte
-lecti
 lecti
 lecto
 lectu
@@ -6722,8 +6493,6 @@ leges
 leget
 legii
 legio
-legio
-legis
 legis
 legit
 legon
@@ -6760,7 +6529,6 @@ lepci
 lepda
 lepor
 lepos
-lepos
 lepra
 lepre
 lepta
@@ -6792,7 +6560,6 @@ leton
 letor
 letos
 letum
-letum
 letus
 leuba
 leuca
@@ -6812,7 +6579,6 @@ levet
 levia
 levir
 levis
-levis
 levit
 levor
 levum
@@ -6827,8 +6593,6 @@ libat
 libem
 liben
 liber
-liber
-libet
 libet
 libia
 libie
@@ -6839,8 +6603,6 @@ libor
 libra
 libre
 libri
-libri
-libro
 libro
 libui
 libum
@@ -6851,7 +6613,6 @@ libye
 libyi
 licat
 liceo
-licet
 licet
 licha
 licia
@@ -6899,7 +6660,6 @@ limax
 limbi
 limbo
 limem
-limen
 limen
 limes
 limet
@@ -6961,12 +6721,10 @@ litet
 litii
 litio
 litis
-litis
 litos
 litui
 litum
 lituo
-litus
 litus
 liubi
 liuva
@@ -7002,8 +6760,6 @@ locos
 locri
 locro
 locum
-locum
-locus
 locus
 lofos
 logio
@@ -7020,15 +6776,12 @@ lolio
 lolis
 lolli
 longa
-longa
-longe
 longe
 longi
 longo
 lopon
 lopsi
 lopus
-loqui
 loqui
 loquo
 loram
@@ -7084,12 +6837,10 @@ lucil
 lucin
 lucio
 lucis
-lucis
 lucle
 lucos
 lucra
 lucre
-lucri
 lucri
 lucro
 lucta
@@ -7113,7 +6864,6 @@ ludor
 ludos
 ludum
 ludus
-ludus
 luela
 luens
 luent
@@ -7130,7 +6880,6 @@ lulii
 lulio
 lumbi
 lumbo
-lumen
 lumen
 lunae
 lunai
@@ -7244,9 +6993,7 @@ magic
 magii
 magio
 magis
-magis
 magma
-magna
 magna
 magne
 magni
@@ -7260,7 +7007,6 @@ mahil
 mahir
 maida
 malac
-malae
 malae
 malai
 malam
@@ -7279,17 +7025,13 @@ malio
 malis
 malit
 malle
-malle
 malli
 mallo
 malon
 malos
 malua
 malui
-malui
 malum
-malum
-malus
 malus
 malva
 malve
@@ -7318,7 +7060,6 @@ manie
 manii
 manio
 manis
-manis
 manli
 manna
 manno
@@ -7331,7 +7072,6 @@ manto
 manue
 manui
 manum
-manus
 manus
 manut
 maoch
@@ -7353,7 +7093,6 @@ maria
 marie
 marii
 mario
-maris
 maris
 marma
 marna
@@ -7381,7 +7120,6 @@ massa
 masse
 masso
 maten
-mater
 mater
 matho
 matii
@@ -7422,11 +7160,8 @@ medae
 medea
 meden
 media
-media
 medie
 medii
-medii
-medio
 medio
 medix
 medma
@@ -7470,7 +7205,6 @@ memfi
 memmi
 memno
 memor
-memor
 memos
 menae
 menam
@@ -7494,7 +7228,6 @@ mensi
 menso
 menta
 mente
-menti
 menti
 mento
 menum
@@ -7565,11 +7298,8 @@ metti
 metto
 metue
 metui
-metui
 metum
 metuo
-metuo
-metus
 metus
 meust
 mevia
@@ -7607,7 +7337,6 @@ mihil
 mihin
 mihis
 miles
-miles
 milhi
 milia
 milie
@@ -7615,7 +7344,6 @@ milii
 milis
 milit
 milla
-mille
 mille
 milli
 millo
@@ -7638,7 +7366,6 @@ mimum
 mimur
 mimus
 minae
-minae
 minam
 minan
 minas
@@ -7657,7 +7384,6 @@ minoa
 minoe
 minoi
 minor
-minor
 minos
 minse
 minue
@@ -7665,7 +7391,6 @@ minui
 minum
 minuo
 minur
-minus
 minus
 mique
 mirae
@@ -7676,17 +7401,14 @@ mirer
 mirga
 miris
 miror
-miror
 miros
 mirra
 mirre
-mirum
 mirum
 mirus
 misac
 misal
 misce
-miser
 miser
 misia
 misio
@@ -7694,9 +7416,7 @@ misit
 misor
 misre
 missa
-missa
 misse
-missi
 missi
 misso
 missu
@@ -7711,7 +7431,6 @@ miton
 mitra
 mitte
 mitti
-mitto
 mitto
 mitur
 mixis
@@ -7734,7 +7453,6 @@ modos
 modum
 moduo
 modus
-modus
 moene
 moeni
 moeri
@@ -7747,7 +7465,6 @@ molam
 molas
 molat
 molem
-moles
 moles
 molet
 molid
@@ -7763,7 +7480,6 @@ momos
 monam
 monas
 monde
-moneo
 moneo
 mones
 monet
@@ -7783,14 +7499,12 @@ mopse
 mopsi
 mopso
 morae
-morae
 morai
 moral
 moram
 moras
 morba
 morbe
-morbi
 morbi
 morbo
 morbu
@@ -7803,7 +7517,6 @@ morio
 moris
 moron
 moror
-moror
 moros
 morsa
 morso
@@ -7813,7 +7526,6 @@ morte
 morti
 morto
 mortu
-morum
 morum
 morus
 morzi
@@ -7841,7 +7553,6 @@ motor
 motos
 motui
 motum
-motus
 motus
 mourn
 moveo
@@ -7881,18 +7592,14 @@ mulsa
 mulsi
 mulso
 multa
-multa
 multe
 multi
-multi
-multo
 multo
 mulum
 mulus
 mummi
 munda
 munde
-mundi
 mundi
 mundo
 munem
@@ -7904,7 +7611,6 @@ munis
 munit
 munna
 munus
-munus
 muram
 murci
 murco
@@ -7912,7 +7618,6 @@ murem
 mures
 murex
 muria
-muris
 muris
 muros
 murra
@@ -7930,7 +7635,6 @@ musam
 musas
 musca
 musce
-musci
 musci
 museo
 music
@@ -8029,7 +7733,6 @@ narsi
 narum
 narve
 nasci
-nasci
 nasia
 nasio
 nasis
@@ -8041,7 +7744,6 @@ nasso
 nasum
 nasus
 natae
-natae
 natam
 natas
 natat
@@ -8049,15 +7751,12 @@ natem
 nates
 natet
 natio
-natio
 natis
 natma
 natos
 natta
 natum
-natum
 natur
-natus
 natus
 nauci
 nauli
@@ -8073,7 +7772,6 @@ navia
 navii
 navim
 navio
-navis
 navis
 navit
 navos
@@ -8102,7 +7800,6 @@ necet
 necin
 necis
 necne
-necne
 necor
 necos
 necte
@@ -8113,7 +7810,6 @@ nedao
 nedui
 nedum
 neeri
-nefas
 nefas
 negas
 negat
@@ -8134,9 +7830,7 @@ nemea
 nemee
 nemon
 nempe
-nempe
 nemra
-nemus
 nemus
 nemut
 nenia
@@ -8150,12 +7844,10 @@ nepas
 nepes
 nepet
 nepos
-nepos
 nepte
 nepti
 nequa
 nequc
-neque
 neque
 nequi
 nequo
@@ -8240,7 +7932,6 @@ nigra
 nigri
 nigro
 nihil
-nihil
 nihio
 nilil
 nilli
@@ -8251,15 +7942,12 @@ nilum
 nilus
 nilve
 nimbi
-nimbi
 nimbo
 nimfa
-nimia
 nimia
 nimie
 nimii
 nimio
-nimis
 nimis
 nimiu
 nimum
@@ -8319,7 +8007,6 @@ nocte
 nocti
 nocto
 noctu
-noctu
 nocua
 nocui
 nocuo
@@ -8349,13 +8036,10 @@ nolim
 nolis
 nolit
 nolle
-nolle
 nolli
-nolui
 nolui
 nomas
 nomem
-nomen
 nomen
 nomie
 nomii
@@ -8375,7 +8059,6 @@ nonil
 nonin
 nonio
 nonis
-nonne
 nonne
 nonno
 nonsi
@@ -8412,7 +8095,6 @@ nosti
 nosui
 notab
 notae
-notae
 notam
 notas
 notat
@@ -8431,8 +8113,6 @@ noton
 notos
 notri
 notum
-notum
-notus
 notus
 nouns
 noure
@@ -8441,7 +8121,6 @@ novam
 novas
 novat
 novel
-novem
 novem
 novet
 novia
@@ -8453,8 +8132,6 @@ novom
 novos
 novre
 novum
-novum
-novus
 novus
 noxae
 noxam
@@ -8496,8 +8173,6 @@ nudet
 nudis
 nudos
 nudum
-nudum
-nudus
 nudus
 nugae
 nugam
@@ -8508,25 +8183,20 @@ nugor
 nuhul
 nuilo
 nulla
-nulla
 nulle
-nulli
 nulli
 nullo
 nullu
 numae
 numas
 numen
-numen
 numer
-nummi
 nummi
 nummo
 numne
 numos
 numus
 nunde
-nuper
 nuper
 nupsi
 nupta
@@ -8570,7 +8240,6 @@ obice
 obici
 obiit
 obire
-obire
 obiri
 obita
 obiti
@@ -8588,11 +8257,9 @@ obser
 obses
 obsim
 obsis
-obsis
 obsit
 obsum
 obtus
-obvia
 obvia
 obvii
 obvio
@@ -8611,7 +8278,6 @@ ocino
 ocior
 ocium
 ocius
-ocius
 ocles
 ocmis
 ocnus
@@ -8623,7 +8289,6 @@ octob
 octub
 ocuis
 ocule
-oculi
 oculi
 oculo
 ocure
@@ -8642,7 +8307,6 @@ odios
 odire
 odite
 odito
-odium
 odium
 odius
 odivi
@@ -8758,9 +8422,7 @@ omnem
 omnen
 omnes
 omnia
-omnia
 omnib
-omnis
 omnis
 omnue
 omnum
@@ -8794,11 +8456,9 @@ oolla
 oones
 oozam
 opaca
-opaca
 opaci
 opaco
 opaze
-opera
 opera
 opere
 operi
@@ -8845,7 +8505,6 @@ orani
 orans
 orant
 orare
-orare
 orari
 orast
 orata
@@ -8864,7 +8523,6 @@ orbem
 orbes
 orbet
 orbio
-orbis
 orbis
 orbos
 orbum
@@ -8900,7 +8558,6 @@ orico
 ories
 origi
 origo
-origo
 orion
 orior
 orios
@@ -8933,7 +8590,6 @@ orsis
 orsua
 orsum
 orsus
-orsus
 ortae
 ortam
 ortas
@@ -8941,8 +8597,6 @@ ortis
 ortos
 ortui
 ortum
-ortum
-ortus
 ortus
 orugy
 osbiu
@@ -9002,7 +8656,6 @@ othir
 otiis
 otior
 otium
-otium
 otius
 oudan
 ouden
@@ -9036,7 +8689,6 @@ paces
 pacet
 pache
 pacis
-pacis
 pacit
 pacta
 pacti
@@ -9055,7 +8707,6 @@ paeda
 paemi
 paena
 paene
-paene
 paete
 paeti
 paeto
@@ -9072,7 +8723,6 @@ pairs
 paisi
 palae
 palai
-palam
 palam
 palas
 paldo
@@ -9137,7 +8787,6 @@ paras
 parat
 parca
 parce
-parce
 parci
 parco
 parda
@@ -9174,10 +8823,8 @@ parua
 parue
 parui
 parum
-parum
 paruo
 parus
-parva
 parva
 parve
 parvi
@@ -9193,7 +8840,6 @@ pason
 passa
 passe
 passi
-passi
 passo
 passu
 pasta
@@ -9201,7 +8847,6 @@ pasti
 pasto
 pastu
 pateo
-pater
 pater
 pates
 patet
@@ -9213,14 +8858,11 @@ patri
 patro
 patte
 pauca
-pauca
-pauci
 pauci
 pauco
 paula
 paule
 pauli
-paulo
 paulo
 pausa
 pavea
@@ -9231,7 +8873,6 @@ pavia
 pavit
 pavli
 pavlo
-pavor
 pavor
 pavos
 pavum
@@ -9251,20 +8892,16 @@ pecua
 pecul
 pecun
 pecus
-pecus
 pedas
 pedem
-pedes
 pedes
 pedia
 pedii
 pedio
 pedis
-pedis
 pedit
 pedna
 pedor
-pedum
 pedum
 pegma
 peina
@@ -9302,7 +8939,6 @@ penee
 penei
 penem
 peneo
-penes
 penes
 penii
 penis
@@ -9520,11 +9156,9 @@ placa
 place
 placo
 plaga
-plaga
 plage
 plaid
 plana
-plane
 plane
 plani
 plano
@@ -9538,7 +9172,6 @@ plebe
 plebi
 plebs
 plect
-plena
 plena
 plene
 pleni
@@ -9586,13 +9219,11 @@ podir
 poema
 poems
 poena
-poena
 poene
 poeni
 poeno
 poera
 poesi
-poeta
 poeta
 poete
 poeti
@@ -9637,7 +9268,6 @@ ponos
 ponte
 ponti
 ponto
-ponto
 popae
 popli
 poplo
@@ -9654,8 +9284,6 @@ poros
 porra
 porri
 porro
-porro
-porta
 porta
 porte
 porti
@@ -9676,7 +9304,6 @@ posis
 posit
 posou
 posse
-posse
 possi
 posso
 possu
@@ -9684,7 +9311,6 @@ posta
 poste
 posti
 posto
-posui
 posui
 potae
 potam
@@ -9706,7 +9332,6 @@ potor
 potos
 potou
 potua
-potui
 potui
 potum
 potus
@@ -9757,12 +9382,9 @@ price
 prigo
 prile
 prima
-prima
 prime
 primi
-primi
 primm
-primo
 primo
 primu
 princ
@@ -9770,19 +9392,15 @@ prins
 print
 prion
 prior
-prior
 prisc
 priti
-prius
 prius
 priva
 privs
 prize
 proba
 probe
-probe
 probi
-probo
 probo
 proca
 proci
@@ -9804,7 +9422,6 @@ prona
 prone
 proni
 prono
-prope
 prope
 propo
 propr
@@ -9832,22 +9449,17 @@ psius
 pubba
 pubem
 pubes
-pubes
 pubis
 pudeo
 pudet
-pudet
-pudor
 pudor
 puell
 puere
-pueri
 pueri
 puero
 pugat
 pugil
 pugio
-pugna
 pugna
 pugne
 pugni
@@ -9855,7 +9467,6 @@ pugno
 pulei
 pulex
 pulix
-pulla
 pulla
 pulli
 pullo
@@ -9922,7 +9533,6 @@ pvero
 quadi
 quagi
 quale
-quale
 quali
 quama
 quand
@@ -9930,13 +9540,11 @@ quani
 quant
 quara
 quare
-quare
 quari
 quarn
 quarr
 quart
 quase
-quasi
 quasi
 quast
 quasu
@@ -9951,7 +9559,6 @@ queml
 quena
 quens
 quere
-queri
 queri
 quern
 quero
@@ -10021,7 +9628,6 @@ radio
 radit
 radix
 raeda
-raeda
 raeti
 raeto
 ragau
@@ -10076,7 +9682,6 @@ raros
 rarum
 rarus
 rasae
-rasae
 rasam
 rasas
 rasim
@@ -10097,10 +9702,8 @@ rates
 rathi
 ratim
 ratio
-ratio
 ratis
 ratos
-ratum
 ratum
 ratun
 ratus
@@ -10131,10 +9734,7 @@ recia
 recip
 recit
 recta
-recta
 recte
-recte
-recti
 recti
 recto
 recum
@@ -10146,7 +9746,6 @@ redde
 reddi
 reddo
 redem
-redeo
 redeo
 redii
 redin
@@ -10166,21 +9765,16 @@ regem
 reges
 reget
 regia
-regia
 regie
 regif
 regig
 regii
 regio
-regio
-regis
 regis
 regit
 regma
 regna
 regni
-regni
-regno
 regno
 regom
 regul
@@ -10247,7 +9841,6 @@ retes
 retia
 retii
 retis
-retro
 retro
 retum
 retur
@@ -10324,7 +9917,6 @@ riste
 risui
 risum
 risus
-risus
 ritia
 ritui
 ritum
@@ -10349,7 +9941,6 @@ robeo
 rober
 robii
 robor
-robur
 robur
 robus
 rocca
@@ -10452,7 +10043,6 @@ rudes
 rudet
 rudia
 rudis
-rudis
 rudit
 rudus
 ruehl
@@ -10482,7 +10072,6 @@ ruglo
 rugos
 rugum
 rugus
-ruina
 ruina
 ruite
 rules
@@ -10549,24 +10138,18 @@ sacci
 sacco
 sacen
 sacer
-sacer
 saces
 sacos
 sacpe
 sacra
-sacra
 sacre
 sacri
-sacri
-sacro
 sacro
 sacta
 sadoc
 saepe
-saepe
 saeps
 saeta
-saeva
 saeva
 saeve
 saevi
@@ -10605,7 +10188,6 @@ salim
 salin
 salio
 salis
-salis
 salit
 saliv
 salix
@@ -10615,7 +10197,6 @@ salmo
 salom
 salon
 salpe
-salsa
 salsa
 salse
 salsi
@@ -10629,8 +10210,6 @@ salui
 salum
 saluo
 salus
-salus
-salva
 salva
 salve
 salvi
@@ -10730,7 +10309,6 @@ satim
 satin
 satio
 satis
-satis
 satiu
 sator
 satos
@@ -10766,7 +10344,6 @@ saxei
 saxeo
 saxis
 saxum
-saxum
 scaev
 scafa
 scala
@@ -10798,7 +10375,6 @@ sciit
 scimu
 scint
 scios
-scire
 scire
 sciri
 scita
@@ -10847,10 +10423,8 @@ secti
 secto
 secui
 secum
-secum
 secun
 secur
-secus
 secus
 secut
 sedad
@@ -10863,12 +10437,10 @@ sedem
 seden
 sedeo
 sedes
-sedes
 sedet
 sedex
 sedin
 sedio
-sedis
 sedis
 sedit
 sedsi
@@ -10895,11 +10467,9 @@ selec
 selem
 selim
 sella
-sella
 selle
 semea
 semei
-semel
 semel
 semem
 semen
@@ -10924,18 +10494,15 @@ senem
 senes
 senet
 senex
-senex
 senia
 senii
 senio
-senis
 senis
 senna
 senno
 senos
 sensa
 sense
-sensi
 sensi
 senso
 sensu
@@ -10959,7 +10526,6 @@ septo
 septu
 seque
 sequi
-sequi
 serae
 seram
 seras
@@ -10977,7 +10543,6 @@ serio
 seris
 serit
 serlo
-sermo
 sermo
 seron
 seror
@@ -10997,11 +10562,8 @@ serum
 seruo
 serus
 serva
-serva
 serve
 servi
-servi
-servo
 servo
 sesac
 sesai
@@ -11071,7 +10633,6 @@ sicul
 sicum
 sicus
 sicut
-sicut
 sidae
 sidam
 sidat
@@ -11102,7 +10663,6 @@ signa
 signe
 signi
 signo
-signo
 sigon
 sihor
 silac
@@ -11132,7 +10692,6 @@ silue
 silui
 silus
 silva
-silva
 silve
 silvi
 simae
@@ -11148,9 +10707,7 @@ simne
 simon
 simos
 simul
-simul
 simum
-simus
 simus
 sinai
 sinam
@@ -11169,7 +10726,6 @@ sinos
 sinti
 sinui
 sinum
-sinus
 sinus
 sione
 sioni
@@ -11219,7 +10775,6 @@ sithi
 sitim
 sitio
 sitis
-sitis
 sitit
 sitne
 siton
@@ -11255,13 +10810,10 @@ socam
 socci
 socco
 socer
-socer
 socho
-socia
 socia
 socie
 socii
-socio
 socio
 socis
 socri
@@ -11289,7 +10841,6 @@ soled
 solei
 solem
 soleo
-soleo
 soles
 solet
 solia
@@ -11297,7 +10848,6 @@ solid
 solii
 solin
 solio
-solis
 solis
 solit
 soliv
@@ -11310,12 +10860,9 @@ solua
 solue
 solui
 solum
-solum
 soluo
 solus
-solus
 solve
-solvi
 solvi
 solvo
 somer
@@ -11341,7 +10888,6 @@ sonte
 sonti
 sonum
 sonus
-sonus
 sooch
 soona
 sophe
@@ -11363,7 +10909,6 @@ sorec
 sorex
 soris
 sorno
-soror
 soror
 soros
 sorte
@@ -11394,7 +10939,6 @@ specu
 spell
 spend
 spera
-spero
 spero
 spexi
 spica
@@ -11428,7 +10972,6 @@ stamu
 stans
 stant
 staph
-stare
 stare
 stari
 stata
@@ -11569,10 +11112,7 @@ sumio
 sumis
 sumit
 summa
-summa
 summe
-summe
-summi
 summi
 summo
 summu
@@ -11599,11 +11139,9 @@ suone
 suotu
 suove
 super
-super
 supha
 suppa
 suppo
-supra
 supra
 supta
 suque
@@ -11705,7 +11243,6 @@ talia
 talin
 talio
 talis
-talis
 talna
 talon
 talos
@@ -11713,7 +11250,6 @@ talpa
 talum
 talus
 tamem
-tamen
 tamen
 tamet
 tamne
@@ -11729,7 +11265,6 @@ tanis
 tanos
 tanqu
 tanta
-tanta
 tante
 tanti
 tanto
@@ -11744,7 +11279,6 @@ tappo
 taram
 taras
 tarba
-tarda
 tarda
 tarde
 tardi
@@ -11803,9 +11337,7 @@ tebus
 tecas
 tecla
 tecta
-tecta
 tecte
-tecti
 tecti
 tecto
 tecum
@@ -11838,11 +11370,9 @@ telas
 telda
 telem
 telis
-telis
 telli
 telon
 telos
-telum
 telum
 telus
 temed
@@ -11862,7 +11392,6 @@ tendo
 tenea
 tenem
 teneo
-teneo
 tener
 tenes
 tenet
@@ -11875,11 +11404,8 @@ tente
 tenti
 tento
 tenue
-tenue
-tenui
 tenui
 tenum
-tenus
 tenus
 tenve
 tepet
@@ -11897,7 +11423,6 @@ terga
 terge
 tergi
 tergo
-tergo
 terim
 teris
 terit
@@ -11909,7 +11434,6 @@ terni
 terno
 teror
 terra
-terra
 terre
 tersa
 tersi
@@ -11920,7 +11444,6 @@ tesca
 tesit
 testa
 teste
-testi
 testi
 testo
 testu
@@ -12039,13 +11562,11 @@ tilli
 timas
 timei
 timeo
-timeo
 times
 timet
 timii
 timne
 timon
-timor
 timor
 timui
 timum
@@ -12105,7 +11626,6 @@ tocor
 tofis
 tofum
 tofus
-togae
 togae
 togam
 togas
@@ -12182,8 +11702,6 @@ totis
 totne
 totos
 totum
-totum
-totus
 totus
 totve
 touch
@@ -12209,7 +11727,6 @@ trama
 trana
 trani
 trano
-trans
 trans
 trapa
 trare
@@ -12294,7 +11811,6 @@ tudun
 tuens
 tuere
 tueri
-tueri
 tuest
 tufae
 tufam
@@ -12334,7 +11850,6 @@ tuotu
 tuque
 turam
 turba
-turba
 turbe
 turbo
 turca
@@ -12351,7 +11866,6 @@ turma
 turne
 turni
 turno
-turpe
 turpe
 turpi
 turri
@@ -12377,10 +11891,8 @@ tutin
 tutis
 tuton
 tutor
-tutor
 tutos
 tutto
-tutum
 tutum
 tutus
 tyana
@@ -12427,8 +11939,6 @@ ullas
 ullis
 ullos
 ullum
-ullum
-ullus
 ullus
 ulmae
 ulmam
@@ -12453,7 +11963,6 @@ ultim
 ultio
 ultis
 ultix
-ultor
 ultor
 ultos
 ultra
@@ -12501,7 +12010,6 @@ uncix
 uncos
 uncum
 uncus
-undae
 undae
 undam
 undas
@@ -12551,7 +12059,6 @@ urbem
 urben
 urbes
 urbis
-urbis
 urbum
 urbus
 urcei
@@ -12596,7 +12103,6 @@ usiam
 using
 usipi
 usquc
-usque
 usque
 ussit
 ustae
@@ -12644,7 +12150,6 @@ utria
 utris
 utros
 utrum
-utrum
 uttam
 uttan
 uuffa
@@ -12663,10 +12168,8 @@ vacem
 vaces
 vacet
 vacua
-vacua
 vacue
 vacui
-vacuo
 vacuo
 vadam
 vadas
@@ -12678,7 +12181,6 @@ vades
 vadet
 vadii
 vadim
-vadis
 vadis
 vadit
 vadum
@@ -12701,13 +12203,11 @@ vagos
 vagum
 vagus
 valde
-valde
 valem
 valen
 valeo
 valer
 vales
-valet
 valet
 valga
 valgi
@@ -12740,10 +12240,8 @@ varas
 varda
 vardo
 varia
-varia
 varie
 varii
-vario
 vario
 varis
 varri
@@ -12756,15 +12254,12 @@ vasis
 vassi
 vasso
 vasta
-vasta
 vaste
 vasti
-vasto
 vasto
 vasum
 vasus
 vatem
-vates
 vates
 vatia
 vatio
@@ -12809,12 +12304,10 @@ velis
 velit
 vella
 velle
-velle
 velli
 velox
 velud
 velum
-velut
 velut
 venae
 venam
@@ -12825,18 +12318,15 @@ vendi
 vendo
 vendu
 venia
-venia
 venid
 venie
 venim
-venio
 venio
 venis
 venit
 venor
 venox
 venre
-venti
 venti
 vento
 venui
@@ -12850,11 +12340,9 @@ verax
 verba
 verbe
 verbi
-verbi
 verbo
 verde
 veres
-veris
 veris
 verit
 verme
@@ -12878,9 +12366,7 @@ verte
 verti
 verto
 verum
-verum
 verun
-verus
 verus
 vesci
 vesco
@@ -12902,7 +12388,6 @@ vetti
 vetto
 vetui
 vetuo
-vetus
 vetus
 vexas
 vexat
@@ -12944,7 +12429,6 @@ videi
 videl
 viden
 video
-video
 vides
 videt
 vidin
@@ -12976,7 +12460,6 @@ vileo
 viles
 vilia
 vilis
-villa
 villa
 ville
 villi
@@ -13012,15 +12495,12 @@ virfa
 virga
 virge
 virgo
-virgo
-viris
 viris
 viror
 viros
 virri
 virro
 virtu
-virum
 virum
 virus
 virve
@@ -13038,12 +12518,9 @@ visne
 visos
 visui
 visum
-visum
 visun
 visus
-visus
 visut
-vitae
 vitae
 vitai
 vital
@@ -13057,7 +12534,6 @@ vitet
 vitia
 vitii
 vitin
-vitio
 vitio
 vitis
 vitra
@@ -13082,8 +12558,6 @@ vivom
 vivor
 vivos
 vivum
-vivum
-vivus
 vivus
 vixet
 vixit
@@ -13109,7 +12583,6 @@ vocer
 voces
 vocet
 vocis
-vocis
 vocon
 vocor
 vocum
@@ -13121,15 +12594,12 @@ volbo
 voles
 volet
 volgi
-volgi
-volgo
 volgo
 volgu
 volis
 volsi
 volso
 voltu
-volui
 volui
 volup
 volus
@@ -13189,8 +12659,6 @@ vugus
 vuill
 vulbo
 vulgi
-vulgi
-vulgo
 vulgo
 vulnu
 vulpe
