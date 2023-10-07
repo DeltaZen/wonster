@@ -1,8 +1,8 @@
 import { DE_WORDLIST } from './wordlists/wordlist.de'
 import { EN_WORDLIST } from './wordlists/wordlist.en'
 import { ES_WORDLIST } from './wordlists/wordlist.es'
-import { LA_WORDLIST } from './wordlists/wordlist.la'
 import { IT_WORDLIST } from './wordlists/wordlist.it'
+import { LA_WORDLIST } from './wordlists/wordlist.la'
 import { RU_WORDLIST } from './wordlists/wordlist.ru'
 
 const EN_KEYBOARD = [
