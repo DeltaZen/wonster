@@ -18,3 +18,7 @@ $> npm run start
 ```bash
 $> npm run build
 ```
+
+## Credits
+
+The monsters images are licensed under CC-BY-SA 3.0 by [Buch](https://opengameart.org/content/monsterpong-assets)
