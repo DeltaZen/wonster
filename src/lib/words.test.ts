@@ -61,10 +61,10 @@ describe('solutionIndex', () => {
   })
 
   test('index', () => {
-      expect(getIndex(new Date(2024, 5, 16), 5000)).toEqual(166)
+    expect(getIndex(new Date(2024, 5, 16), 5000)).toEqual(166)
 
-      expect(getIndex(new Date(2024, 5, 17), 5000)).toEqual(167)
-      expect(getIndex(new Date(2024, 5, 18), 5000)).toEqual(168)
+    expect(getIndex(new Date(2024, 5, 17), 5000)).toEqual(167)
+    expect(getIndex(new Date(2024, 5, 18), 5000)).toEqual(168)
     expect(getIndex(new Date(2024, 5, 18, 15, 42, 0), 5000)).toEqual(168)
 
     expect(getIndex(new Date(2024, 5, 23, 15, 42, 0), 5000)).toEqual(173)

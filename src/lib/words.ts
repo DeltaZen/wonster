@@ -13,8 +13,8 @@ import { NOT_CONTAINED_MESSAGE, WRONG_SPOT_MESSAGE } from '../constants/strings'
 import { VALID_GUESSES } from '../constants/validGuesses'
 import { EN_WORDLIST } from '../constants/wordlists/wordlist.en'
 import { getToday } from './dateutils'
-import { getGuessStatuses } from './statuses'
 import { getSeed } from './localStorage'
+import { getGuessStatuses } from './statuses'
 
 // 1 January 2024 Game Epoch
 export const firstGameDate = new Date(2024, 0)
@@ -184,7 +184,12 @@ export function getSelectedWordlist() {
   return EN_WORDLIST
 }
 
-let currSolution: {solution: string; solutionGameDate: Date; solutionIndex: number; tomorrow: number} | null = null
+let currSolution: {
+  solution: string
+  solutionGameDate: Date
+  solutionIndex: number
+  tomorrow: number
+} | null = null
 export function getCurrentSolution() {
   if (currSolution === null) {
     currSolution = getSolution(getGameDate(), getSelectedWordlist())

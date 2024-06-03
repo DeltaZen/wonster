@@ -13,8 +13,8 @@ import { DatePickerModal } from './components/modals/DatePickerModal'
 import { InfoModal } from './components/modals/InfoModal'
 import { SettingsModal } from './components/modals/SettingsModal'
 import { StatsModal } from './components/modals/StatsModal'
-import { Navbar } from './components/navbar/Navbar'
 import { Monster } from './components/monster/Monster'
+import { Navbar } from './components/navbar/Navbar'
 import {
   DATE_LOCALE,
   DISCOURAGE_INAPP_BROWSERS,
@@ -43,6 +43,7 @@ import {
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import {
   findFirstUnusedReveal,
+  getCurrentSolution,
   getGameDate,
   getIsLatestGame,
   getSelectedWordlist,
@@ -50,7 +51,6 @@ import {
   isWordInWordList,
   setGameDate,
   unicodeLength,
-  getCurrentSolution,
 } from './lib/words'
 
 function App() {

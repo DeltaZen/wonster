@@ -10,8 +10,8 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Humans used to fight monsters, but it turned out befriending them is way more practical.
-        To befriend a monster you must guess its favorite word.
+        Humans used to fight monsters, but it turned out befriending them is way
+        more practical. To befriend a monster you must guess its favorite word.
       </p>
 
       <p className="text-sm text-gray-500 dark:text-gray-300">

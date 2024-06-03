@@ -1,8 +1,8 @@
 #monster {
-    margin: auto;
+  margin: auto;
 }
 
 #monster canvas {
-    width: 80px;
-    heigth: 115px;
+  width: 80px;
+  heigth: 115px;
 }

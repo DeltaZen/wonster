@@ -2,11 +2,11 @@ import { WORDLISTS } from '../constants/wordlist'
 
 const lang = getLanguage()
 
-const maxserialKey = "maxSerial"
+const maxserialKey = 'maxSerial'
 const gameStateKey = 'gameState_' + lang
 const archiveGameStateKey = 'archiveGameState_' + lang
 const highContrastKey = 'highContrast'
-const gameSeedKey = "gameSeed"
+const gameSeedKey = 'gameSeed'
 
 export type StoredGameState = {
   guesses: string[]
@@ -56,7 +56,7 @@ export const setStoredIsHighContrastMode = (isHighContrast: boolean) => {
 }
 
 export const getStoredIsHighContrastMode = () => {
-  return true;
+  return true
 }
 
 export function getLanguage() {
@@ -64,27 +64,27 @@ export function getLanguage() {
 }
 
 export function setSeed(seed: number) {
-    localStorage.setItem(gameSeedKey, seed.toString())
+  localStorage.setItem(gameSeedKey, seed.toString())
 }
 
 export function getSeed() {
-    return parseInt(localStorage.getItem(gameSeedKey) || "-1")
+  return parseInt(localStorage.getItem(gameSeedKey) || '-1')
 }
 
 export function generateSeed() {
-    const randInt = (min: number, max: number) => {
-        return Math.floor(Math.random() * (max - min + 1) + min)
-    }
-    const wordCount = WORDLISTS[getLanguage()].words.length
-    const seed = randInt(0, wordCount)
-    setSeed(seed)
-    return seed
+  const randInt = (min: number, max: number) => {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+  const wordCount = WORDLISTS[getLanguage()].words.length
+  const seed = randInt(0, wordCount)
+  setSeed(seed)
+  return seed
 }
 
 export function getLastSerial() {
-    return parseInt(localStorage.getItem(maxserialKey) || "0")
+  return parseInt(localStorage.getItem(maxserialKey) || '0')
 }
 
 export function setLastSerial(serial: number) {
-    localStorage.setItem(maxserialKey, serial.toString());
+  localStorage.setItem(maxserialKey, serial.toString())
 }

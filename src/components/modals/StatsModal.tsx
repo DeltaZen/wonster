@@ -2,10 +2,7 @@ import { ClockIcon, ShareIcon } from '@heroicons/react/outline'
 import { format } from 'date-fns'
 import Countdown from 'react-countdown'
 
-import {
-  DATE_LOCALE,
-  ENABLE_ARCHIVED_GAMES,
-} from '../../constants/settings'
+import { DATE_LOCALE, ENABLE_ARCHIVED_GAMES } from '../../constants/settings'
 import {
   ARCHIVE_GAMEDATE_TEXT,
   GUESS_DISTRIBUTION_TEXT,
