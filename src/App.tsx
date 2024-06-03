@@ -11,9 +11,9 @@ import { Grid } from './components/grid/Grid'
 import { Keyboard } from './components/keyboard/Keyboard'
 import { DatePickerModal } from './components/modals/DatePickerModal'
 import { InfoModal } from './components/modals/InfoModal'
-import { MigrateStatsModal } from './components/modals/MigrateStatsModal'
 import { SettingsModal } from './components/modals/SettingsModal'
 import { StatsModal } from './components/modals/StatsModal'
+import { Monster } from './components/monster/Monster'
 import { Navbar } from './components/navbar/Navbar'
 import {
   DATE_LOCALE,
@@ -33,12 +33,9 @@ import {
   WIN_MESSAGES,
   WORD_NOT_FOUND_MESSAGE,
 } from './constants/strings'
-import { WORDLISTS } from './constants/wordlist'
 import { useAlert } from './context/AlertContext'
 import { isInAppBrowser } from './lib/browser'
 import {
-  getLanguage,
-  getStoredIsHighContrastMode,
   loadGameStateFromLocalStorage,
   saveGameStateToLocalStorage,
   setStoredIsHighContrastMode,
@@ -46,23 +43,21 @@ import {
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import {
   findFirstUnusedReveal,
+  getCurrentSolution,
   getGameDate,
   getIsLatestGame,
   getSelectedWordlist,
   isWinningWord,
   isWordInWordList,
   setGameDate,
-  solution,
-  solutionGameDate,
   unicodeLength,
 } from './lib/words'
 
 function App() {
+  const solution = getCurrentSolution().solution
+  const solutionGameDate = getCurrentSolution().solutionGameDate
   const isLatestGame = getIsLatestGame()
   const gameDate = getGameDate()
-  const prefersDarkMode = window.matchMedia(
-    '(prefers-color-scheme: dark)'
-  ).matches
 
   const { showError: showErrorAlert, showSuccess: showSuccessAlert } =
     useAlert()
@@ -71,20 +66,11 @@ function App() {
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
   const [isStatsModalOpen, setIsStatsModalOpen] = useState(false)
   const [isDatePickerModalOpen, setIsDatePickerModalOpen] = useState(false)
-  const [isMigrateStatsModalOpen, setIsMigrateStatsModalOpen] = useState(false)
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false)
   const [currentRowClass, setCurrentRowClass] = useState('')
   const [isGameLost, setIsGameLost] = useState(false)
-  const [isDarkMode, setIsDarkMode] = useState(
-    localStorage.getItem('theme')
-      ? localStorage.getItem('theme') === 'dark'
-      : prefersDarkMode
-      ? true
-      : false
-  )
-  const [isHighContrastMode, setIsHighContrastMode] = useState(
-    getStoredIsHighContrastMode()
-  )
+  const [isDarkMode, setIsDarkMode] = useState(true)
+  const [isHighContrastMode, setIsHighContrastMode] = useState(true)
   const [isRevealing, setIsRevealing] = useState(false)
   const [guesses, setGuesses] = useState<string[]>(() => {
     const loaded = loadGameStateFromLocalStorage(isLatestGame)
@@ -170,7 +156,7 @@ function App() {
 
   useEffect(() => {
     saveGameStateToLocalStorage(getIsLatestGame(), { guesses, solution })
-  }, [guesses])
+  }, [guesses, solution])
 
   useEffect(() => {
     if (isGameWon) {
@@ -189,7 +175,7 @@ function App() {
         setIsStatsModalOpen(true)
       }, (solution.length + 1) * REVEAL_TIME_MS)
     }
-  }, [isGameWon, isGameLost, showSuccessAlert])
+  }, [isGameWon, isGameLost, showSuccessAlert, solution])
 
   const onChar = (value: string) => {
     if (
@@ -254,8 +240,6 @@ function App() {
       setGuesses([...guesses, currentGuess])
       setCurrentGuess('')
 
-      const language_label = WORDLISTS[getLanguage()].label
-
       if (winningWord) {
         if (isLatestGame) {
           setStats(addStatsForCompletedGame(stats, guesses.length))
@@ -263,7 +247,7 @@ function App() {
         const name = window.webxdc.selfName
         const info = `${name} guessed the word of the day! 🎉 ${
           guesses.length + 1
-        }/${MAX_CHALLENGES} [${language_label}]`
+        }/${MAX_CHALLENGES}`
 
         window.webxdc.sendUpdate({ payload: null, info: info }, info)
         return setIsGameWon(true)
@@ -274,7 +258,7 @@ function App() {
           setStats(addStatsForCompletedGame(stats, guesses.length + 1))
         }
         const name = window.webxdc.selfName
-        const info = `${name} failed to guess the word of the day 😅 X/${MAX_CHALLENGES} [${language_label}]`
+        const info = `${name} failed to guess the word of the day 😅 X/${MAX_CHALLENGES}`
         window.webxdc.sendUpdate({ payload: null, info: info }, info)
         setIsGameLost(true)
         showErrorAlert(CORRECT_WORD_MESSAGE(solution), {
@@ -294,6 +278,8 @@ function App() {
           setIsDatePickerModalOpen={setIsDatePickerModalOpen}
           setIsSettingsModalOpen={setIsSettingsModalOpen}
         />
+
+        <Monster />
 
         {!isLatestGame && (
           <div className="flex items-center justify-center">
@@ -341,10 +327,6 @@ function App() {
                 durationMs: LONG_ALERT_TIME_MS,
               })
             }
-            handleMigrateStatsButton={() => {
-              setIsStatsModalOpen(false)
-              setIsMigrateStatsModalOpen(true)
-            }}
             isHardMode={isHardMode}
             isDarkMode={isDarkMode}
             isHighContrastMode={isHighContrastMode}
@@ -358,10 +340,6 @@ function App() {
               setGameDate(d)
             }}
             handleClose={() => setIsDatePickerModalOpen(false)}
-          />
-          <MigrateStatsModal
-            isOpen={isMigrateStatsModalOpen}
-            handleClose={() => setIsMigrateStatsModalOpen(false)}
           />
           <SettingsModal
             isOpen={isSettingsModalOpen}

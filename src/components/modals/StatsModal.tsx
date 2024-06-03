@@ -2,11 +2,7 @@ import { ClockIcon, ShareIcon } from '@heroicons/react/outline'
 import { format } from 'date-fns'
 import Countdown from 'react-countdown'
 
-import {
-  DATE_LOCALE,
-  ENABLE_ARCHIVED_GAMES,
-  ENABLE_MIGRATE_STATS,
-} from '../../constants/settings'
+import { DATE_LOCALE, ENABLE_ARCHIVED_GAMES } from '../../constants/settings'
 import {
   ARCHIVE_GAMEDATE_TEXT,
   GUESS_DISTRIBUTION_TEXT,
@@ -14,12 +10,10 @@ import {
   SHARE_TEXT,
   STATISTICS_TITLE,
 } from '../../constants/strings'
-import { WORDLISTS } from '../../constants/wordlist'
-import { GameStats, getLanguage } from '../../lib/localStorage'
+import { GameStats } from '../../lib/localStorage'
 import { shareStatus } from '../../lib/share'
-import { solutionGameDate, tomorrow } from '../../lib/words'
+import { getCurrentSolution } from '../../lib/words'
 import { Histogram } from '../stats/Histogram'
-import { MigrationIntro } from '../stats/MigrationIntro'
 import { StatBar } from '../stats/StatBar'
 import { BaseModal } from './BaseModal'
 
@@ -34,7 +28,6 @@ type Props = {
   isGameWon: boolean
   handleShareToClipboard: () => void
   handleShareFailure: () => void
-  handleMigrateStatsButton: () => void
   isHardMode: boolean
   isDarkMode: boolean
   isHighContrastMode: boolean
@@ -52,29 +45,27 @@ export const StatsModal = ({
   isGameWon,
   handleShareToClipboard,
   handleShareFailure,
-  handleMigrateStatsButton,
   isHardMode,
   isDarkMode,
   isHighContrastMode,
   numberOfGuessesMade,
 }: Props) => {
+  const solutionGameDate = getCurrentSolution().solutionGameDate
+  const tomorrow = getCurrentSolution().tomorrow
   if (gameStats.totalGames <= 0) {
     return (
       <BaseModal
-        title={STATISTICS_TITLE + ' ' + WORDLISTS[getLanguage()].label}
+        title={STATISTICS_TITLE}
         isOpen={isOpen}
         handleClose={handleClose}
       >
         <StatBar gameStats={gameStats} />
-        {ENABLE_MIGRATE_STATS && (
-          <MigrationIntro handleMigrateStatsButton={handleMigrateStatsButton} />
-        )}
       </BaseModal>
     )
   }
   return (
     <BaseModal
-      title={STATISTICS_TITLE + ' ' + WORDLISTS[getLanguage()].label}
+      title={STATISTICS_TITLE}
       isOpen={isOpen}
       handleClose={handleClose}
     >
@@ -135,12 +126,6 @@ export const StatsModal = ({
               {SHARE_TEXT}
             </button>
           </div>
-        </div>
-      )}
-      {ENABLE_MIGRATE_STATS && (
-        <div>
-          <hr className="mt-4 -mb-4 border-gray-500" />
-          <MigrationIntro handleMigrateStatsButton={handleMigrateStatsButton} />
         </div>
       )}
     </BaseModal>

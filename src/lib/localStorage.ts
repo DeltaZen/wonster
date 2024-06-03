@@ -1,12 +1,12 @@
-import { MigrationStats } from '@/components/modals/MigrateStatsModal'
-
 import { WORDLISTS } from '../constants/wordlist'
 
 const lang = getLanguage()
 
+const maxserialKey = 'maxSerial'
 const gameStateKey = 'gameState_' + lang
 const archiveGameStateKey = 'archiveGameState_' + lang
 const highContrastKey = 'highContrast'
+const gameSeedKey = 'gameSeed'
 
 export type StoredGameState = {
   guesses: string[]
@@ -56,48 +56,35 @@ export const setStoredIsHighContrastMode = (isHighContrast: boolean) => {
 }
 
 export const getStoredIsHighContrastMode = () => {
-  const highContrast = localStorage.getItem(highContrastKey)
-  return highContrast === '1'
+  return true
 }
 
 export function getLanguage() {
-  let selected_lang: keyof typeof WORDLISTS =
-    (localStorage.getItem('selected_lang') as keyof typeof WORDLISTS) || 'en'
-  if (!Object.keys(WORDLISTS).includes(selected_lang)) {
-    selected_lang = 'en'
-  }
-  return selected_lang
+  return 'en' as keyof typeof WORDLISTS
 }
 
-export function exportMigration(): MigrationStats {
-  const result: MigrationStats = {} as unknown as MigrationStats
-  for (let code of Object.keys(WORDLISTS) as (keyof typeof WORDLISTS)[]) {
-    const stats = localStorage.getItem('gameStats_' + code)
-    const state = localStorage.getItem('gameState_' + code)
-    result[code] = {
-      statistics: stats ? (JSON.parse(stats) as GameStats) : null,
-      gameState: state ? (JSON.parse(state) as StoredGameState) : null,
-    }
-  }
-  return result
+export function setSeed(seed: number) {
+  localStorage.setItem(gameSeedKey, seed.toString())
 }
 
-export function importMigration(stats: MigrationStats) {
-  for (let code of Object.keys(WORDLISTS) as (keyof typeof WORDLISTS)[]) {
-    if (stats[code]) {
-      const migrationStats = stats[code]
-      if (migrationStats.gameState) {
-        localStorage.setItem(
-          'gameState_' + code,
-          JSON.stringify(migrationStats.gameState)
-        )
-      }
-      if (migrationStats.statistics) {
-        localStorage.setItem(
-          'gameStats_' + code,
-          JSON.stringify(migrationStats.statistics)
-        )
-      }
-    }
+export function getSeed() {
+  return parseInt(localStorage.getItem(gameSeedKey) || '-1')
+}
+
+export function generateSeed() {
+  const randInt = (min: number, max: number) => {
+    return Math.floor(Math.random() * (max - min + 1) + min)
   }
+  const wordCount = WORDLISTS[getLanguage()].words.length
+  const seed = randInt(0, wordCount)
+  setSeed(seed)
+  return seed
+}
+
+export function getLastSerial() {
+  return parseInt(localStorage.getItem(maxserialKey) || '0')
+}
+
+export function setLastSerial(serial: number) {
+  localStorage.setItem(maxserialKey, serial.toString())
 }

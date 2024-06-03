@@ -15,7 +15,7 @@ esac
 
 cd build
 rm "$PACKAGE_NAME.xdc" 2> /dev/null
-zip -9 --recurse-paths "$PACKAGE_NAME.xdc" --exclude asset-manifest.json static/js/*.txt "./*~" "./*.xdc" -- *
+zip -9 --recurse-paths "$PACKAGE_NAME.xdc" --exclude webxdc.js asset-manifest.json static/js/*.txt "./*~" "./*.xdc" -- *
 
 echo "success, archive contents:"
 unzip -l "$PACKAGE_NAME.xdc"
