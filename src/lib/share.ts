@@ -1,9 +1,7 @@
 import { MAX_CHALLENGES } from '../constants/settings'
 import { GAME_TITLE } from '../constants/strings'
-import { WORDLISTS } from '../constants/wordlist'
-import { getLanguage } from './localStorage'
 import { getGuessStatuses } from './statuses'
-import { solutionIndex, unicodeSplit } from './words'
+import { getCurrentSolution, unicodeSplit } from './words'
 
 export const shareStatus = (
   solution: string,
@@ -15,10 +13,9 @@ export const shareStatus = (
   handleShareToClipboard: () => void,
   handleShareFailure: () => void
 ) => {
-  const language_label = WORDLISTS[getLanguage()].label
-
+  const solutionIndex = getCurrentSolution().solutionIndex
   const textToShare =
-    `${GAME_TITLE} (${language_label}) ${solutionIndex} ${
+    `${GAME_TITLE} ${solutionIndex} ${
       lost ? 'X' : guesses.length
     }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
     generateEmojiGrid(

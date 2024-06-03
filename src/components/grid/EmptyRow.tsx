@@ -1,7 +1,8 @@
-import { solution } from '../../lib/words'
+import { getCurrentSolution } from '../../lib/words'
 import { Cell } from './Cell'
 
 export const EmptyRow = () => {
+  const solution = getCurrentSolution().solution
   const emptyCells = Array.from(Array(solution.length))
 
   return (

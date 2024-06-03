@@ -11,13 +11,13 @@ import queryString from 'query-string'
 import { ENABLE_ARCHIVED_GAMES } from '../constants/settings'
 import { NOT_CONTAINED_MESSAGE, WRONG_SPOT_MESSAGE } from '../constants/strings'
 import { VALID_GUESSES } from '../constants/validGuesses'
-import { WORDLISTS } from '../constants/wordlist'
 import { EN_WORDLIST } from '../constants/wordlists/wordlist.en'
 import { getToday } from './dateutils'
 import { getGuessStatuses } from './statuses'
+import { getSeed } from './localStorage'
 
-// 1 January 2022 Game Epoch
-export const firstGameDate = new Date(2022, 0)
+// 1 January 2024 Game Epoch
+export const firstGameDate = new Date(2024, 0)
 export const periodInDays = 1
 
 export const isWordInWordList = (word: string, wordlist: string[]) => {
@@ -28,7 +28,7 @@ export const isWordInWordList = (word: string, wordlist: string[]) => {
 }
 
 export const isWinningWord = (word: string) => {
-  return solution === word
+  return getCurrentSolution().solution === word
 }
 
 // build a set of previously revealed letters - present and correct
@@ -41,7 +41,7 @@ export const findFirstUnusedReveal = (word: string, guesses: string[]) => {
 
   const lettersLeftArray = new Array<string>()
   const guess = guesses[guesses.length - 1]
-  const statuses = getGuessStatuses(solution, guess)
+  const statuses = getGuessStatuses(getCurrentSolution().solution, guess)
   const splitWord = unicodeSplit(word)
   const splitGuess = unicodeSplit(guess)
 
@@ -108,11 +108,14 @@ export const isValidGameDate = (date: Date) => {
   return differenceInDays(firstGameDate, date) % periodInDays === 0
 }
 
-export const getIndex = (gameDate: Date) => {
+export const getIndex = (gameDate: Date, arrayLength: number) => {
   let start = firstGameDate
-  let index = -1
+  let index = getSeed()
   do {
     index++
+    if (index >= arrayLength) {
+      index = index % arrayLength
+    }
     start = addDays(start, periodInDays)
   } while (start <= gameDate)
 
@@ -129,7 +132,7 @@ export const getWordOfDay = (index: number, wordlist: string[]) => {
 
 export const getSolution = (gameDate: Date, wordlist: string[]) => {
   const nextGameDate = getNextGameDate(gameDate)
-  const index = getIndex(gameDate)
+  const index = getIndex(gameDate, wordlist.length)
   const wordOfTheDay = getWordOfDay(index, wordlist)
   return {
     solution: wordOfTheDay,
@@ -178,13 +181,13 @@ export const getIsLatestGame = () => {
 }
 
 export function getSelectedWordlist() {
-  // console.log("generating word for selected_lang: ", localStorage.getItem("selected_lang"));
-  return (
-    WORDLISTS[
-      (localStorage.getItem('selected_lang') as keyof typeof WORDLISTS) || 'en'
-    ]?.words || EN_WORDLIST
-  )
+  return EN_WORDLIST
 }
 
-export const { solution, solutionGameDate, solutionIndex, tomorrow } =
-  getSolution(getGameDate(), getSelectedWordlist())
+let currSolution: {solution: string; solutionGameDate: Date; solutionIndex: number; tomorrow: number} | null = null
+export function getCurrentSolution() {
+  if (currSolution === null) {
+    currSolution = getSolution(getGameDate(), getSelectedWordlist())
+  }
+  return currSolution
+}

@@ -61,15 +61,15 @@ describe('solutionIndex', () => {
   })
 
   test('index', () => {
-    expect(getIndex(new Date(2022, 5, 16))).toEqual(166)
+      expect(getIndex(new Date(2024, 5, 16), 5000)).toEqual(166)
 
-    expect(getIndex(new Date(2022, 5, 17))).toEqual(167)
-    expect(getIndex(new Date(2022, 5, 18))).toEqual(168)
-    expect(getIndex(new Date(2022, 5, 18, 15, 42, 0))).toEqual(168)
+      expect(getIndex(new Date(2024, 5, 17), 5000)).toEqual(167)
+      expect(getIndex(new Date(2024, 5, 18), 5000)).toEqual(168)
+    expect(getIndex(new Date(2024, 5, 18, 15, 42, 0), 5000)).toEqual(168)
 
-    expect(getIndex(new Date(2022, 5, 23, 15, 42, 0))).toEqual(173)
+    expect(getIndex(new Date(2024, 5, 23, 15, 42, 0), 5000)).toEqual(173)
 
-    expect(getIndex(new Date(2022, 5, 24))).toEqual(174)
+    expect(getIndex(new Date(2024, 5, 24), 5000)).toEqual(174)
   })
 
   test('word of the day', () => {
