@@ -1,12 +1,5 @@
-import {
-  addDays,
-  differenceInDays,
-  formatISO,
-  parseISO,
-  startOfDay,
-} from 'date-fns'
+import { addDays, differenceInDays, formatISO, startOfDay } from 'date-fns'
 import { default as GraphemeSplitter } from 'grapheme-splitter'
-import queryString from 'query-string'
 
 import { NOT_CONTAINED_MESSAGE, WRONG_SPOT_MESSAGE } from '../constants/strings'
 import { VALID_GUESSES } from '../constants/validGuesses'
@@ -142,21 +135,7 @@ export const getSolution = (gameDate: Date, wordlist: string[]) => {
 }
 
 export const getGameDate = () => {
-  if (getIsLatestGame()) {
-    return getToday()
-  }
-
-  const parsed = queryString.parse(window.location.search)
-  try {
-    const d = startOfDay(parseISO(parsed.d!.toString()))
-    if (d >= getToday() || d < firstGameDate) {
-      setGameDate(getToday())
-    }
-    return d
-  } catch (e) {
-    console.log(e)
-    return getToday()
-  }
+  return getToday()
 }
 
 export const setGameDate = (d: Date) => {
@@ -169,10 +148,6 @@ export const setGameDate = (d: Date) => {
     console.log(e)
   }
   window.location.href = '/'
-}
-
-export const getIsLatestGame = () => {
-  return true
 }
 
 export function getSelectedWordlist() {
