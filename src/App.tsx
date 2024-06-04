@@ -1,7 +1,5 @@
 import './App.css'
 
-import { ClockIcon } from '@heroicons/react/outline'
-import { format } from 'date-fns'
 import { default as GraphemeSplitter } from 'grapheme-splitter'
 import { useEffect, useState } from 'react'
 import Div100vh from 'react-div-100vh'
@@ -15,7 +13,6 @@ import { StatsModal } from './components/modals/StatsModal'
 import { Monster } from './components/monster/Monster'
 import { Navbar } from './components/navbar/Navbar'
 import {
-  DATE_LOCALE,
   DISCOURAGE_INAPP_BROWSERS,
   LONG_ALERT_TIME_MS,
   MAX_CHALLENGES,
@@ -43,8 +40,6 @@ import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import {
   findFirstUnusedReveal,
   getCurrentSolution,
-  getGameDate,
-  getIsLatestGame,
   getSelectedWordlist,
   isWinningWord,
   isWordInWordList,
@@ -53,8 +48,6 @@ import {
 
 function App() {
   const solution = getCurrentSolution().solution
-  const isLatestGame = getIsLatestGame()
-  const gameDate = getGameDate()
 
   const { showError: showErrorAlert, showSuccess: showSuccessAlert } =
     useAlert()
@@ -69,7 +62,7 @@ function App() {
   const [isHighContrastMode, setIsHighContrastMode] = useState(true)
   const [isRevealing, setIsRevealing] = useState(false)
   const [guesses, setGuesses] = useState<string[]>(() => {
-    const loaded = loadGameStateFromLocalStorage(isLatestGame)
+    const loaded = loadGameStateFromLocalStorage()
     if (loaded?.solution !== solution) {
       return []
     }
@@ -97,7 +90,7 @@ function App() {
   useEffect(() => {
     // if no game state on load,
     // show the user the how-to info modal
-    if (!loadGameStateFromLocalStorage(true)) {
+    if (!loadGameStateFromLocalStorage()) {
       setTimeout(() => {
         setIsInfoModalOpen(true)
       }, WELCOME_INFO_MODAL_MS)
@@ -151,7 +144,7 @@ function App() {
   }
 
   useEffect(() => {
-    saveGameStateToLocalStorage(getIsLatestGame(), { guesses, solution })
+    saveGameStateToLocalStorage({ guesses, solution })
   }, [guesses, solution])
 
   useEffect(() => {
@@ -237,9 +230,7 @@ function App() {
       setCurrentGuess('')
 
       if (winningWord) {
-        if (isLatestGame) {
-          setStats(addStatsForCompletedGame(stats, guesses.length))
-        }
+        setStats(addStatsForCompletedGame(stats, guesses.length))
         const name = window.webxdc.selfName
         const info = `${name} guessed the word of the day! 🎉 ${
           guesses.length + 1
@@ -250,9 +241,7 @@ function App() {
       }
 
       if (guesses.length === MAX_CHALLENGES - 1) {
-        if (isLatestGame) {
-          setStats(addStatsForCompletedGame(stats, guesses.length + 1))
-        }
+        setStats(addStatsForCompletedGame(stats, guesses.length + 1))
         const name = window.webxdc.selfName
         const info = `${name} failed to guess the word of the day 😅 X/${MAX_CHALLENGES}`
         window.webxdc.sendUpdate({ payload: null, info: info }, info)
@@ -275,15 +264,6 @@ function App() {
         />
 
         <Monster />
-
-        {!isLatestGame && (
-          <div className="flex items-center justify-center">
-            <ClockIcon className="h-6 w-6 stroke-gray-600 dark:stroke-gray-300" />
-            <p className="text-base text-gray-600 dark:text-gray-300">
-              {format(gameDate, 'd MMMM yyyy', { locale: DATE_LOCALE })}
-            </p>
-          </div>
-        )}
 
         <div className="mx-auto flex w-full grow flex-col px-1 pt-2 pb-8 sm:px-6 md:max-w-7xl lg:px-8 short:pb-2 short:pt-2">
           <div className="flex grow flex-col justify-center pb-6 short:pb-2">
@@ -313,7 +293,6 @@ function App() {
             solution={solution}
             guesses={guesses}
             gameStats={stats}
-            isLatestGame={isLatestGame}
             isGameLost={isGameLost}
             isGameWon={isGameWon}
             handleShareToClipboard={() => showSuccessAlert(GAME_COPIED_MESSAGE)}

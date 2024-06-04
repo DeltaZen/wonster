@@ -26,7 +26,6 @@
     "egoroof-blowfish": "^2.2.2",
     "grapheme-splitter": "1.0.4",
     "pixi.js": "^8.1.5",
-    "query-string": "^7.1.1",
     "react": "^17.0.2",
     "react-countdown": "^2.3.2",
     "react-div-100vh": "^0.7.0",

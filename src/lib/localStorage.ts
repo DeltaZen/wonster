@@ -4,7 +4,6 @@ const lang = getLanguage()
 
 const maxserialKey = 'maxSerial'
 const gameStateKey = 'gameState_' + lang
-const archiveGameStateKey = 'archiveGameState_' + lang
 const highContrastKey = 'highContrast'
 const gameSeedKey = 'gameSeed'
 const gameSeedTimeKey = 'gameSeedTime'
@@ -14,17 +13,12 @@ export type StoredGameState = {
   solution: string
 }
 
-export const saveGameStateToLocalStorage = (
-  isLatestGame: boolean,
-  gameState: StoredGameState
-) => {
-  const key = isLatestGame ? gameStateKey : archiveGameStateKey
-  localStorage.setItem(key, JSON.stringify(gameState))
+export const saveGameStateToLocalStorage = (gameState: StoredGameState) => {
+  localStorage.setItem(gameStateKey, JSON.stringify(gameState))
 }
 
-export const loadGameStateFromLocalStorage = (isLatestGame: boolean) => {
-  const key = isLatestGame ? gameStateKey : archiveGameStateKey
-  const state = localStorage.getItem(key)
+export const loadGameStateFromLocalStorage = () => {
+  const state = localStorage.getItem(gameStateKey)
   return state ? (JSON.parse(state) as StoredGameState) : null
 }
 

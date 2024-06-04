@@ -20,7 +20,6 @@ type Props = {
   solution: string
   guesses: string[]
   gameStats: GameStats
-  isLatestGame: boolean
   isGameLost: boolean
   isGameWon: boolean
   handleShareToClipboard: () => void
@@ -37,7 +36,6 @@ export const StatsModal = ({
   solution,
   guesses,
   gameStats,
-  isLatestGame,
   isGameLost,
   isGameWon,
   handleShareToClipboard,
@@ -70,7 +68,6 @@ export const StatsModal = ({
         {GUESS_DISTRIBUTION_TEXT}
       </h4>
       <Histogram
-        isLatestGame={isLatestGame}
         gameStats={gameStats}
         isGameWon={isGameWon}
         numberOfGuessesMade={numberOfGuessesMade}
