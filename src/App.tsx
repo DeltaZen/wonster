@@ -9,7 +9,6 @@ import Div100vh from 'react-div-100vh'
 import { AlertContainer } from './components/alerts/AlertContainer'
 import { Grid } from './components/grid/Grid'
 import { Keyboard } from './components/keyboard/Keyboard'
-import { DatePickerModal } from './components/modals/DatePickerModal'
 import { InfoModal } from './components/modals/InfoModal'
 import { SettingsModal } from './components/modals/SettingsModal'
 import { StatsModal } from './components/modals/StatsModal'
@@ -49,13 +48,11 @@ import {
   getSelectedWordlist,
   isWinningWord,
   isWordInWordList,
-  setGameDate,
   unicodeLength,
 } from './lib/words'
 
 function App() {
   const solution = getCurrentSolution().solution
-  const solutionGameDate = getCurrentSolution().solutionGameDate
   const isLatestGame = getIsLatestGame()
   const gameDate = getGameDate()
 
@@ -65,7 +62,6 @@ function App() {
   const [isGameWon, setIsGameWon] = useState(false)
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
   const [isStatsModalOpen, setIsStatsModalOpen] = useState(false)
-  const [isDatePickerModalOpen, setIsDatePickerModalOpen] = useState(false)
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false)
   const [currentRowClass, setCurrentRowClass] = useState('')
   const [isGameLost, setIsGameLost] = useState(false)
@@ -275,7 +271,6 @@ function App() {
         <Navbar
           setIsInfoModalOpen={setIsInfoModalOpen}
           setIsStatsModalOpen={setIsStatsModalOpen}
-          setIsDatePickerModalOpen={setIsDatePickerModalOpen}
           setIsSettingsModalOpen={setIsSettingsModalOpen}
         />
 
@@ -331,15 +326,6 @@ function App() {
             isDarkMode={isDarkMode}
             isHighContrastMode={isHighContrastMode}
             numberOfGuessesMade={guesses.length}
-          />
-          <DatePickerModal
-            isOpen={isDatePickerModalOpen}
-            initialDate={solutionGameDate}
-            handleSelectDate={(d) => {
-              setIsDatePickerModalOpen(false)
-              setGameDate(d)
-            }}
-            handleClose={() => setIsDatePickerModalOpen(false)}
           />
           <SettingsModal
             isOpen={isSettingsModalOpen}

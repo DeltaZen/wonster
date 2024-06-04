@@ -8,7 +8,6 @@ import {
 import { default as GraphemeSplitter } from 'grapheme-splitter'
 import queryString from 'query-string'
 
-import { ENABLE_ARCHIVED_GAMES } from '../constants/settings'
 import { NOT_CONTAINED_MESSAGE, WRONG_SPOT_MESSAGE } from '../constants/strings'
 import { VALID_GUESSES } from '../constants/validGuesses'
 import { EN_WORDLIST } from '../constants/wordlists/wordlist.en'
@@ -173,11 +172,7 @@ export const setGameDate = (d: Date) => {
 }
 
 export const getIsLatestGame = () => {
-  if (!ENABLE_ARCHIVED_GAMES) {
-    return true
-  }
-  const parsed = queryString.parse(window.location.search)
-  return parsed === null || !('d' in parsed)
+  return true
 }
 
 export function getSelectedWordlist() {
