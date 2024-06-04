@@ -7,9 +7,6 @@ export const shareStatus = (
   solution: string,
   guesses: string[],
   lost: boolean,
-  isHardMode: boolean,
-  isDarkMode: boolean,
-  isHighContrastMode: boolean,
   handleShareToClipboard: () => void,
   handleShareFailure: () => void
 ) => {
@@ -17,12 +14,8 @@ export const shareStatus = (
   const textToShare =
     `${GAME_TITLE} ${solutionIndex} ${
       lost ? 'X' : guesses.length
-    }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
-    generateEmojiGrid(
-      solution,
-      guesses,
-      getEmojiTiles(isDarkMode, isHighContrastMode)
-    )
+    }/${MAX_CHALLENGES}\n\n` +
+    generateEmojiGrid(solution, guesses, ['🟩', '🟨', '⬛'])
 
   const shareData = { text: textToShare }
 
@@ -75,12 +68,4 @@ export const generateEmojiGrid = (
         .join('')
     })
     .join('\n')
-}
-
-const getEmojiTiles = (isDarkMode: boolean, isHighContrastMode: boolean) => {
-  let tiles: string[] = []
-  tiles.push(isHighContrastMode ? '🟧' : '🟩')
-  tiles.push(isHighContrastMode ? '🟦' : '🟨')
-  tiles.push(isDarkMode ? '⬛' : '⬜')
-  return tiles
 }

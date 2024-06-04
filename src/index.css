@@ -20,11 +20,6 @@
   --absent-cell-bg-color: theme('colors.slate.700');
 }
 
-.high-contrast {
-  --correct-cell-bg-color: theme('colors.orange.400');
-  --present-cell-bg-color: theme('colors.cyan.400');
-}
-
 .cell-fill-animation {
   animation: onTypeCell linear;
   animation-duration: 0.35s;

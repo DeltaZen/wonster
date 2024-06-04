@@ -5,14 +5,9 @@ import { GAME_TITLE } from '../../constants/strings'
 type Props = {
   setIsInfoModalOpen: (value: boolean) => void
   setIsStatsModalOpen: (value: boolean) => void
-  setIsSettingsModalOpen: (value: boolean) => void
 }
 
-export const Navbar = ({
-  setIsInfoModalOpen,
-  setIsStatsModalOpen,
-  setIsSettingsModalOpen,
-}: Props) => {
+export const Navbar = ({ setIsInfoModalOpen, setIsStatsModalOpen }: Props) => {
   return (
     <div className="navbar">
       <div className="navbar-content px-5 short:h-auto">

@@ -4,7 +4,6 @@ const lang = getLanguage()
 
 const maxserialKey = 'maxSerial'
 const gameStateKey = 'gameState_' + lang
-const highContrastKey = 'highContrast'
 const gameSeedKey = 'gameSeed'
 const gameSeedTimeKey = 'gameSeedTime'
 
@@ -40,18 +39,6 @@ export const saveStatsToLocalStorage = (gameStats: GameStats) => {
 export const loadStatsFromLocalStorage = () => {
   const stats = localStorage.getItem(gameStatKey)
   return stats ? (JSON.parse(stats) as GameStats) : null
-}
-
-export const setStoredIsHighContrastMode = (isHighContrast: boolean) => {
-  if (isHighContrast) {
-    localStorage.setItem(highContrastKey, '1')
-  } else {
-    localStorage.removeItem(highContrastKey)
-  }
-}
-
-export const getStoredIsHighContrastMode = () => {
-  return true
 }
 
 export function getLanguage() {
