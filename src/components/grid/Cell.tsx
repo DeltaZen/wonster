@@ -28,7 +28,8 @@ export const Cell = ({
       'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-600':
         !status,
       'border-black dark:border-slate-100': value && !status,
-      'absent shadowed bg-absent text-white border-absent': status === 'absent',
+      'absent shadowed bg-slate-700 text-white border-slate-700':
+        status === 'absent',
       'correct shadowed bg-correct text-white border-correct':
         status === 'correct',
       'present shadowed bg-present text-white border-present':

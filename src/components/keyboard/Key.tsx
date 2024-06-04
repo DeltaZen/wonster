@@ -30,7 +30,7 @@ export const Key = ({
     {
       'transition ease-in-out': isRevealing,
       'bg-slate-600': !status,
-      'bg-absent text-white': status === 'absent',
+      'bg-slate-800 text-white': status === 'absent',
       'bg-correct text-white': status === 'correct',
       'bg-present text-white': status === 'present',
     }

@@ -11,7 +11,6 @@ module.exports = {
       colors: {
         'correct': '#99c23e',
         'present': '#6646cc',
-        'absent': '#142336',
       }
     },
   },
