@@ -7,6 +7,7 @@ const gameStateKey = 'gameState_' + lang
 const archiveGameStateKey = 'archiveGameState_' + lang
 const highContrastKey = 'highContrast'
 const gameSeedKey = 'gameSeed'
+const gameSeedTimeKey = 'gameSeedTime'
 
 export type StoredGameState = {
   guesses: string[]
@@ -63,12 +64,15 @@ export function getLanguage() {
   return 'en' as keyof typeof WORDLISTS
 }
 
-export function setSeed(seed: number) {
+export function setSeed(seed: number, time: number) {
   localStorage.setItem(gameSeedKey, seed.toString())
+  localStorage.setItem(gameSeedTimeKey, time.toString())
 }
 
 export function getSeed() {
-  return parseInt(localStorage.getItem(gameSeedKey) || '-1')
+  const seed = parseInt(localStorage.getItem(gameSeedKey) || '-1')
+  const time = parseInt(localStorage.getItem(gameSeedTimeKey) || '0')
+  return { seed, time }
 }
 
 export function generateSeed() {
@@ -77,8 +81,9 @@ export function generateSeed() {
   }
   const wordCount = WORDLISTS[getLanguage()].words.length
   const seed = randInt(0, wordCount)
-  setSeed(seed)
-  return seed
+  const payload = { seed, time: new Date().valueOf() }
+  setSeed(payload.seed, payload.time)
+  return payload
 }
 
 export function getLastSerial() {

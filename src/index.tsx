@@ -12,6 +12,7 @@ import {
   setLastSerial,
   setSeed,
 } from './lib/localStorage'
+import { clearCurrentSolution } from './lib/words'
 import reportWebVitals from './reportWebVitals'
 
 window.focus() // otherwise key events are not triggered if the app is inside an iframe
@@ -19,8 +20,10 @@ window.webxdc
   .setUpdateListener((update) => {
     const payload = update.payload || {}
     if (payload.seed !== undefined) {
-      if (getSeed() === -1) {
-        setSeed(payload.seed)
+      const { seed, time } = getSeed()
+      if (seed === -1 || payload.time < time) {
+        setSeed(payload.seed, payload.time)
+        clearCurrentSolution()
       }
     }
     if (update.serial === update.max_serial) {
@@ -28,8 +31,8 @@ window.webxdc
     }
   }, getLastSerial())
   .then(() => {
-    if (getSeed() === -1) {
-      window.webxdc.sendUpdate({ payload: { seed: generateSeed() } }, '')
+    if (getSeed().seed === -1) {
+      window.webxdc.sendUpdate({ payload: generateSeed() }, '')
     }
     ReactDOM.render(
       <React.StrictMode>

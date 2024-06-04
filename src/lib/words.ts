@@ -110,7 +110,7 @@ export const isValidGameDate = (date: Date) => {
 
 export const getIndex = (gameDate: Date, arrayLength: number) => {
   let start = firstGameDate
-  let index = getSeed()
+  let index = getSeed().seed
   do {
     index++
     if (index >= arrayLength) {
@@ -195,4 +195,8 @@ export function getCurrentSolution() {
     currSolution = getSolution(getGameDate(), getSelectedWordlist())
   }
   return currSolution
+}
+
+export function clearCurrentSolution() {
+  currSolution = null
 }

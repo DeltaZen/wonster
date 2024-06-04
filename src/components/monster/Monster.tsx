@@ -28,9 +28,9 @@ async function digestMessage(message: string): Promise<string> {
   return hashHex
 }
 
-async function addSprite(alias: string, frame: Rectangle) {
+async function addSprite(url: string, frame: Rectangle) {
   app.stage.addChild(
-    new Sprite(new Texture({ source: await Assets.load(alias), frame }))
+    new Sprite(new Texture({ source: await Assets.load(url), frame }))
   )
 }
 
@@ -43,7 +43,7 @@ async function createMonster() {
     '/' +
     today.getFullYear() +
     '/' +
-    getSeed()
+    getSeed().seed
   if (seed !== todaySeed) {
     seed = todaySeed
   } else {
@@ -51,11 +51,6 @@ async function createMonster() {
   }
   await initProm
   app.stage.removeChildren()
-  const root = document.getElementById('monster')
-  if (root) {
-    root.innerHTML = ''
-    root.appendChild(app.canvas)
-  }
   const hex = await digestMessage(seed)
   console.log(`Monster seed: ${seed} (${hex})`)
   const color = colorVariants[parseInt(hex[0], 16) % colorVariants.length]
@@ -64,22 +59,17 @@ async function createMonster() {
   const eyesKind = eyesVariants[parseInt(hex[3], 16) % eyesVariants.length]
   const noseKind = noseVariants[parseInt(hex[4], 16) % noseVariants.length]
   const mouthKind = mouthVariants[parseInt(hex[5], 16) % mouthVariants.length]
-  Assets.addBundle('images', [
-    { alias: 'body', src: 'gfx/body.png' },
-    { alias: 'extra', src: `gfx/extra/${extraKind}.png` },
-    { alias: 'ears', src: `gfx/ears/${earsKind}.png` },
-    { alias: 'eyes', src: `gfx/eyes/${eyesKind}.png` },
-    { alias: 'nose', src: `gfx/nose/${noseKind}.png` },
-    { alias: 'mouth', src: `gfx/mouth/${mouthKind}.png` },
-  ])
-  await Assets.loadBundle('images')
   const frame = new Rectangle(frameWidth * color, 0, frameWidth, frameHeight)
-  await addSprite('body', frame)
-  await addSprite('extra', frame)
-  await addSprite('ears', frame)
-  await addSprite('eyes', frame)
-  await addSprite('nose', frame)
-  await addSprite('mouth', frame)
+  await addSprite('gfx/body.png', frame)
+  await addSprite(`gfx/extra/${extraKind}.png`, frame)
+  await addSprite(`gfx/ears/${earsKind}.png`, frame)
+  await addSprite(`gfx/eyes/${eyesKind}.png`, frame)
+  await addSprite(`gfx/nose/${noseKind}.png`, frame)
+  await addSprite(`gfx/mouth/${mouthKind}.png`, frame)
+
+  const root = document.getElementById('monster')
+  root!.innerHTML = ''
+  root!.appendChild(app.canvas)
 }
 
 function PixiMonster() {
