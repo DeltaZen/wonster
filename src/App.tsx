@@ -12,7 +12,6 @@ import { StatsModal } from './components/modals/StatsModal'
 import { Monster } from './components/monster/Monster'
 import { Navbar } from './components/navbar/Navbar'
 import {
-  DISCOURAGE_INAPP_BROWSERS,
   LONG_ALERT_TIME_MS,
   MAX_CHALLENGES,
   REVEAL_TIME_MS,
@@ -20,7 +19,6 @@ import {
 } from './constants/settings'
 import {
   CORRECT_WORD_MESSAGE,
-  DISCOURAGE_INAPP_BROWSER_TEXT,
   GAME_COPIED_MESSAGE,
   NOT_ENOUGH_LETTERS_MESSAGE,
   SHARE_FAILURE_TEXT,
@@ -28,7 +26,6 @@ import {
   WORD_NOT_FOUND_MESSAGE,
 } from './constants/strings'
 import { useAlert } from './context/AlertContext'
-import { isInAppBrowser } from './lib/browser'
 import {
   loadGameStateFromLocalStorage,
   saveGameStateToLocalStorage,
@@ -83,15 +80,6 @@ function App() {
       }, WELCOME_INFO_MODAL_MS)
     }
   })
-
-  useEffect(() => {
-    DISCOURAGE_INAPP_BROWSERS &&
-      isInAppBrowser() &&
-      showErrorAlert(DISCOURAGE_INAPP_BROWSER_TEXT, {
-        persist: false,
-        durationMs: 7000,
-      })
-  }, [showErrorAlert])
 
   const clearCurrentRowClass = () => {
     setCurrentRowClass('')
