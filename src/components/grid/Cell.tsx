@@ -23,7 +23,7 @@ export const Cell = ({
   const animationDelay = `${position * REVEAL_TIME_MS}ms`
 
   const classes = classnames(
-    'xxshort:w-11 xxshort:h-11 short:text-2xl short:w-12 short:h-12 w-12 h-12 border-solid border-2 flex items-center justify-center mx-0.5 text-4xl font-bold rounded dark:text-white',
+    'xxshort:w-9 xxshort:h-9 xshort:w-10 xshort:h-10 short:w-11 short:h-11 short:text-2xl w-12 h-12 border-solid border-2 flex items-center justify-center mx-0.5 text-3xl font-bold rounded dark:text-white',
     {
       'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-600':
         !status,
