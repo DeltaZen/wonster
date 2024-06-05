@@ -1,4 +1,4 @@
-import { ShareIcon } from '@heroicons/react/outline'
+import { ShareIcon } from '@heroicons/react/24/outline'
 import Countdown from 'react-countdown'
 
 import {
