@@ -3,6 +3,6 @@
 }
 
 #monster canvas {
-  width: 80px;
-  heigth: 115px;
+  height: 100%;
+  width: auto;
 }

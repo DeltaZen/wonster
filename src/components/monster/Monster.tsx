@@ -78,8 +78,9 @@ function PixiMonster() {
 }
 
 export const Monster = () => {
+  const classes = 'xxshort:h-20 xshort:h-24 short:h-28 h-32 w-auto'
   return (
-    <div id="monster">
+    <div id="monster" className={classes}>
       <PixiMonster />
     </div>
   )

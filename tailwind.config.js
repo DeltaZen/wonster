@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        short: { raw: '(max-height: 650px)' },
-        xshort: { raw: '(max-height: 560px)' },
-        xxshort: { raw: '(max-height: 490px)' },
+        short: { raw: '(max-height: 700px)' },
+        xshort: { raw: '(max-height: 600px)' },
+        xxshort: { raw: '(max-height: 500px)' },
       },
       colors: {
         'correct': '#99c23e',
