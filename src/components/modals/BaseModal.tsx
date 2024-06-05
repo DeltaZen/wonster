@@ -1,5 +1,5 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { XCircleIcon } from '@heroicons/react/outline'
+import { XCircleIcon } from '@heroicons/react/24/outline'
 import { Fragment } from 'react'
 
 type Props = {

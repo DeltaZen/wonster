@@ -1,4 +1,4 @@
-import { ChartBarIcon, InformationCircleIcon } from '@heroicons/react/outline'
+import { ChartBarIcon, InformationCircleIcon } from '@heroicons/react/24/outline'
 
 import { GAME_TITLE } from '../../constants/strings'
 
