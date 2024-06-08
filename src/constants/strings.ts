@@ -1,4 +1,4 @@
-export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
+export const GAME_TITLE = 'Wonster'
 
 export const WIN_MESSAGES = [
   'Best friends forever!',
@@ -28,3 +28,7 @@ export const TOTAL_TRIES_TEXT = 'Total tries'
 export const SUCCESS_RATE_TEXT = 'Success rate'
 export const CURRENT_STREAK_TEXT = 'Current streak'
 export const BEST_STREAK_TEXT = 'Best streak'
+export const WIN_INFO_MESSAGE = (name: string, tries: number, limit: number) =>
+  `${name} guessed the word of the day! 🎉 ${tries}/${limit}`
+export const LOSE_INFO_MESSAGE = (name: string, limit: number) =>
+  `${name} failed to guess the word of the day 😅 X/${limit}`

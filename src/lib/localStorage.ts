@@ -1,9 +1,7 @@
-import { WORDLISTS } from '../constants/wordlist'
-
-const lang = getLanguage()
+import { WORDLIST } from '../constants/wordlist'
 
 const maxserialKey = 'maxSerial'
-const gameStateKey = 'gameState_' + lang
+const gameStateKey = 'gameState'
 const gameSeedKey = 'gameSeed'
 const gameSeedTimeKey = 'gameSeedTime'
 
@@ -21,7 +19,7 @@ export const loadGameStateFromLocalStorage = () => {
   return state ? (JSON.parse(state) as StoredGameState) : null
 }
 
-const gameStatKey = 'gameStats_' + lang
+const gameStatKey = 'gameStats'
 
 export type GameStats = {
   winDistribution: number[]
@@ -41,10 +39,6 @@ export const loadStatsFromLocalStorage = () => {
   return stats ? (JSON.parse(stats) as GameStats) : null
 }
 
-export function getLanguage() {
-  return 'en' as keyof typeof WORDLISTS
-}
-
 export function setSeed(seed: number, time: number) {
   localStorage.setItem(gameSeedKey, seed.toString())
   localStorage.setItem(gameSeedTimeKey, time.toString())
@@ -60,7 +54,7 @@ export function generateSeed() {
   const randInt = (min: number, max: number) => {
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
-  const wordCount = WORDLISTS[getLanguage()].words.length
+  const wordCount = WORDLIST.length
   const seed = randInt(0, wordCount)
   const payload = { seed, time: new Date().valueOf() }
   setSeed(payload.seed, payload.time)

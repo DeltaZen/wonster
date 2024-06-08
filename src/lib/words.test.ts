@@ -1,11 +1,6 @@
-import { EN_WORDLIST } from '@/constants/wordlists/wordlist.en'
+import { WORDLIST } from '@/constants/wordlist'
 
-import {
-  getIndex,
-  getLastGameDate,
-  getNextGameDate,
-  getWordOfDay,
-} from './words'
+import { getIndex, getLastGameDate, getNextGameDate } from './words'
 
 describe('solutionIndex', () => {
   test('last game date', () => {
@@ -61,21 +56,14 @@ describe('solutionIndex', () => {
   })
 
   test('index', () => {
-    expect(getIndex(new Date(2024, 5, 16), 5000)).toEqual(166)
+    expect(getIndex(new Date(2024, 5, 16))).toEqual(166)
 
-    expect(getIndex(new Date(2024, 5, 17), 5000)).toEqual(167)
-    expect(getIndex(new Date(2024, 5, 18), 5000)).toEqual(168)
-    expect(getIndex(new Date(2024, 5, 18, 15, 42, 0), 5000)).toEqual(168)
+    expect(getIndex(new Date(2024, 5, 17))).toEqual(167)
+    expect(getIndex(new Date(2024, 5, 18))).toEqual(168)
+    expect(getIndex(new Date(2024, 5, 18, 15, 42, 0))).toEqual(168)
 
-    expect(getIndex(new Date(2024, 5, 23, 15, 42, 0), 5000)).toEqual(173)
+    expect(getIndex(new Date(2024, 5, 23, 15, 42, 0))).toEqual(173)
 
-    expect(getIndex(new Date(2024, 5, 24), 5000)).toEqual(174)
-  })
-
-  test('word of the day', () => {
-    expect(() => getWordOfDay(-1, EN_WORDLIST)).toThrowError('Invalid index')
-    expect(getWordOfDay(0, EN_WORDLIST)).toEqual('WHICH')
-    expect(getWordOfDay(1, EN_WORDLIST)).toEqual('THERE')
-    expect(getWordOfDay(255, EN_WORDLIST)).toEqual('SHEEP')
+    expect(getIndex(new Date(2024, 5, 24))).toEqual(174)
   })
 })

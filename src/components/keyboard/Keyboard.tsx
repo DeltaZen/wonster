@@ -1,8 +1,7 @@
 import { useEffect } from 'react'
 
 import { DELETE_TEXT, ENTER_TEXT } from '../../constants/strings'
-import { WORDLISTS } from '../../constants/wordlist'
-import { getLanguage } from '../../lib/localStorage'
+import { KEYBOARD } from '../../constants/wordlist'
 import { getStatuses } from '../../lib/statuses'
 import { localeAwareUpperCase } from '../../lib/words'
 import { Key } from './Key'
@@ -56,12 +55,10 @@ export const Keyboard = ({
     }
   }, [onEnter, onDelete, onChar])
 
-  const keyboard = WORDLISTS[getLanguage()].keyboard
-
   return (
     <div>
       <div className="mb-1 flex justify-center">
-        {keyboard[0].map((key) => (
+        {KEYBOARD[0].map((key) => (
           <Key
             value={key}
             key={key}
@@ -72,7 +69,7 @@ export const Keyboard = ({
         ))}
       </div>
       <div className="mb-1 flex justify-center">
-        {keyboard[1].map((key) => (
+        {KEYBOARD[1].map((key) => (
           <Key
             value={key}
             key={key}
@@ -86,7 +83,7 @@ export const Keyboard = ({
         <Key width={65.4} value="ENTER" onClick={onClick}>
           {ENTER_TEXT}
         </Key>
-        {keyboard[2].map((key) => (
+        {KEYBOARD[2].map((key) => (
           <Key
             value={key}
             key={key}
