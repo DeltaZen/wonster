@@ -101,17 +101,12 @@ export const isValidGameDate = (date: Date) => {
 }
 
 export const getIndex = (gameDate: Date) => {
-  const arrayLength = WORDLIST.length
-  let start = firstGameDate
-  let index = getSeed().seed
-  do {
-    index++
-    if (index >= arrayLength) {
-      index = index % arrayLength
-    }
-    start = addDays(start, periodInDays)
-  } while (start <= gameDate)
+  const oneDay = 24 * 60 * 60 * 1000 // hours*minutes*seconds*milliseconds
+  const diffDays = Math.round(
+    (gameDate.valueOf() - firstGameDate.valueOf()) / oneDay
+  )
 
+  let index = (diffDays + getSeed().seed) % WORDLIST.length
   if (index < 0) {
     throw new Error('Invalid index')
   }
@@ -128,10 +123,6 @@ export const getSolution = (gameDate: Date) => {
     solutionIndex: index,
     tomorrow: nextGameDate.valueOf(),
   }
-}
-
-export const getGameDate = () => {
-  return getToday()
 }
 
 export const setGameDate = (d: Date) => {
@@ -154,7 +145,7 @@ let currSolution: {
 } | null = null
 export function getCurrentSolution() {
   if (currSolution === null) {
-    currSolution = getSolution(getGameDate())
+    currSolution = getSolution(getToday())
   }
   return currSolution
 }
