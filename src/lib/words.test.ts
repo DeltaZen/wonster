@@ -1,10 +1,6 @@
 import { WORDLIST } from '@/constants/wordlist'
 
-import {
-  getIndex,
-  getLastGameDate,
-  getNextGameDate,
-} from './words'
+import { getIndex, getLastGameDate, getNextGameDate } from './words'
 
 describe('solutionIndex', () => {
   test('last game date', () => {
