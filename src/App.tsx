@@ -20,8 +20,10 @@ import {
 import {
   CORRECT_WORD_MESSAGE,
   GAME_COPIED_MESSAGE,
+  LOSE_INFO_MESSAGE,
   NOT_ENOUGH_LETTERS_MESSAGE,
   SHARE_FAILURE_TEXT,
+  WIN_INFO_MESSAGE,
   WIN_MESSAGES,
   WORD_NOT_FOUND_MESSAGE,
 } from './constants/strings'
@@ -33,7 +35,6 @@ import {
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import {
   getCurrentSolution,
-  getSelectedWordlist,
   isWinningWord,
   isWordInWordList,
   unicodeLength,
@@ -136,7 +137,7 @@ function App() {
       })
     }
 
-    if (!isWordInWordList(currentGuess, getSelectedWordlist())) {
+    if (!isWordInWordList(currentGuess)) {
       setCurrentRowClass('jiggle')
       return showErrorAlert(WORD_NOT_FOUND_MESSAGE, {
         onClose: clearCurrentRowClass,
@@ -163,10 +164,7 @@ function App() {
       if (winningWord) {
         setStats(addStatsForCompletedGame(stats, guesses.length))
         const name = window.webxdc.selfName
-        const info = `${name} guessed the word of the day! 🎉 ${
-          guesses.length + 1
-        }/${MAX_CHALLENGES}`
-
+        const info = WIN_INFO_MESSAGE(name, guesses.length + 1, MAX_CHALLENGES)
         window.webxdc.sendUpdate({ payload: null, info: info }, info)
         return setIsGameWon(true)
       }
@@ -174,7 +172,7 @@ function App() {
       if (guesses.length === MAX_CHALLENGES - 1) {
         setStats(addStatsForCompletedGame(stats, guesses.length + 1))
         const name = window.webxdc.selfName
-        const info = `${name} failed to guess the word of the day 😅 X/${MAX_CHALLENGES}`
+        const info = LOSE_INFO_MESSAGE(name, MAX_CHALLENGES)
         window.webxdc.sendUpdate({ payload: null, info: info }, info)
         setIsGameLost(true)
         showErrorAlert(CORRECT_WORD_MESSAGE(solution), {

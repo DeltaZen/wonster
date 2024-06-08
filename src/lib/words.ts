@@ -3,7 +3,7 @@ import { default as GraphemeSplitter } from 'grapheme-splitter'
 
 import { NOT_CONTAINED_MESSAGE, WRONG_SPOT_MESSAGE } from '../constants/strings'
 import { VALID_GUESSES } from '../constants/validGuesses'
-import { EN_WORDLIST } from '../constants/wordlists/wordlist.en'
+import { WORDLIST } from '../constants/wordlist'
 import { getToday } from './dateutils'
 import { getSeed } from './localStorage'
 import { getGuessStatuses } from './statuses'
@@ -12,9 +12,9 @@ import { getGuessStatuses } from './statuses'
 export const firstGameDate = new Date(2024, 0)
 export const periodInDays = 1
 
-export const isWordInWordList = (word: string, wordlist: string[]) => {
+export const isWordInWordList = (word: string) => {
   return (
-    wordlist.includes(localeAwareLowerCase(word)) ||
+    WORDLIST.includes(localeAwareLowerCase(word)) ||
     VALID_GUESSES.includes(localeAwareLowerCase(word))
   )
 }
@@ -100,7 +100,8 @@ export const isValidGameDate = (date: Date) => {
   return differenceInDays(firstGameDate, date) % periodInDays === 0
 }
 
-export const getIndex = (gameDate: Date, arrayLength: number) => {
+export const getIndex = (gameDate: Date) => {
+  const arrayLength = WORDLIST.length
   let start = firstGameDate
   let index = getSeed().seed
   do {
@@ -111,21 +112,16 @@ export const getIndex = (gameDate: Date, arrayLength: number) => {
     start = addDays(start, periodInDays)
   } while (start <= gameDate)
 
-  return index
-}
-
-export const getWordOfDay = (index: number, wordlist: string[]) => {
   if (index < 0) {
     throw new Error('Invalid index')
   }
-
-  return localeAwareUpperCase(wordlist[index % wordlist.length])
+  return index
 }
 
-export const getSolution = (gameDate: Date, wordlist: string[]) => {
+export const getSolution = (gameDate: Date) => {
   const nextGameDate = getNextGameDate(gameDate)
-  const index = getIndex(gameDate, wordlist.length)
-  const wordOfTheDay = getWordOfDay(index, wordlist)
+  const index = getIndex(gameDate)
+  const wordOfTheDay = localeAwareUpperCase(WORDLIST[index % WORDLIST.length])
   return {
     solution: wordOfTheDay,
     solutionGameDate: gameDate,
@@ -150,10 +146,6 @@ export const setGameDate = (d: Date) => {
   window.location.href = '/'
 }
 
-export function getSelectedWordlist() {
-  return EN_WORDLIST
-}
-
 let currSolution: {
   solution: string
   solutionGameDate: Date
@@ -162,7 +154,7 @@ let currSolution: {
 } | null = null
 export function getCurrentSolution() {
   if (currSolution === null) {
-    currSolution = getSolution(getGameDate(), getSelectedWordlist())
+    currSolution = getSolution(getGameDate())
   }
   return currSolution
 }
